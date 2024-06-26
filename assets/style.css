@@ -293,7 +293,7 @@
   }
   
   .play-icons {
-    margin: 0 10px;
+    margin-left: 10px;
   }
   
   .clock-icon {
@@ -301,7 +301,7 @@
   }
   
   .watch-now {
-    margin-left: 10px;
+    padding: 0 20px;
     background-color: red;
     transition: all 0.3s;
     outline: none;
