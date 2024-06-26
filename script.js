@@ -81,19 +81,18 @@ function showSlides() {
     if (slideIndex > slides.length - 1) {
         slideIndex = 0
     }
-
-    //setTimeout(showSlides, 5000); 
 }
 
+const timeOut = setInterval(showSlides, 5000); 
 showSlides(slideIndex = 0);
 function currentSlide(n) {
     showSlides(slideIndex = n);
     var dots = document.getElementsByClassName("dot");
-    for (var i = 0; i < dots.length; i++) {
+    for ( var i = 0; i < dots.length; i++) {
         if (i === n) {
-            dots[i].src = './assets/images/Line 1.png';  // Đường dẫn tới ảnh cho nút active
+            dots[i].src = './assets/images/Line 1.png'; 
         } else {
-            dots[i].src = './assets/images/Ellipse 2.png';  // Đường dẫn tới ảnh ban đầu
+            dots[i].src = './assets/images/Ellipse 2.png';  
         }
     }
 }
