@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIE WEBSITE</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.5.1-web/css/fontawesome.css">
+    <link rel="stylesheet" href="./assets/fontawesome-free-6.5.1-web/css/fontawesome.min.css">
+    <link rel="stylesheet" href="./asets/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+    <div class="Web">
+        <div class="navbar">
+            <ul class="nav-menu ">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#">Genre</a></li>
+                <li><a href="#">Country</a></li>
+            </ul>
+            <div class="search-container mar-8 pad-8 ">
+                <input type="text" placeholder="Search movies..." id="search-input">
+                <div id="search-button">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <ul class="nav-menu ">
+                <li><a href="#Movies">Movies</a></li>
+                <li><a href="#Series">Series</a></li>
+                <li><a href="#Animation">Animation</a></li>
+            </ul>
+            <div class="register pad-8">
+                <a href="#">Login/Signup</a>
+                <i class="bell-button fa fa-bell"></i>
+            </div>
+        </div>
+        <!-- slider -->
+        <div class="slider-control">
+            <div class="buttons">
+                <button id="watch" class="watch-now " onclick="momodal()">
+                    Watch Now
+                    <img class="play-icons" src="./assets/images/icon/Vector.png" alt="play">
+                </button>
+                <button class="watch-later">Watch Later
+                    <img class="clock-icon" src="./assets/images/icon/time.png" alt="">
+            </div>
+            <div class="nenmodal" id="nenmodal-1">
+                <div class="nenmodal2" onclick="momodal()"></div>
+                <div class="ndmodal">
+                    <div class="closemodal" id="close-modal-button"><button onclick="momodal()">×</button></div>
+                    <div class="titlemodal">Watch Now</div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4d_Uctu_wWI?si=b67FhUBCjnsJW2kG"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="content-btn">
+                        <div class="trend" onclick="momodal()">Thoát</div>
+                        <div class="trend" onclick="momodal()">OK</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider ">
+            <div class="slider-item fade">
+                <img src="./assets/images/avatar-way-of-water.jpg" alt="Avata">
+                <div class="text-content">
+                    <div class="text-heading">
+                        <p>Avatar: The Way of Water</p>
+                    </div>
+                    <div class="content-slider">
+                        <div class="btn-tags">
+                            <span class="tag">Action</span>
+                            <span class="tag">Adventure</span>
+                            <span class="tag">Science Fiction</span>
+                        </div>
+                        <div class="tags-icon">
+                            <div class="icon-tag">
+                                <img class="icon1" src="./assets/images/icon/Group.png" alt="">
+                                <p>2022</p>
+                            </div>
+                            <div class="icon-tag">
+                                <img class="icon2" src="./assets/images/icon/time1.png" alt="">
+                                <p> 3:12:00</p>
+                            </div>
+                            <div class="icon-tag">
+                                <img class="icon3" src="./assets/images/icon/start.png" alt="">
+                                <p>8.5</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-description">
+                        <p>Set more than a decade after the events of the first film, learn the story of the
+                            Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths
+                            they go to keep each other safe, the battles they fight to stay alive, and the tragedies
+                            they endure.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item fade">
+                <img src="./assets/images/trending/Medellin.jpg" alt="Medellin">
+                <div class="text-content">
+                    <div class="text-heading">
+                        <p>Medellin</p>
+                    </div>
+                    <div class="content-slider">
+                        <div class="btn-tags">
+                            <span class="tag">Action</span>
+                            <span class="tag">Comedy</span>
+                        </div>
+                        <div class="tags-icon">
+                            <div class="icon-tag">
+                                <img class="icon1" src="./assets/images/icon/Group.png" alt="">
+                                <p>2022</p>
+                            </div>
+                            <div class="icon-tag">
+                                <img class="icon2" src="./assets/images/icon/time1.png" alt="">
+                                <p> 3:12:00</p>
+                            </div>
+                            <div class="icon-tag">
+                                <img class="icon3" src="./assets/images/icon/start.png" alt="">
+                                <p>8.5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-description">
+                        <p>Set more than a decade after the events of the first film, learn the
+                            story of the
+                            Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths
+                            they go
+                            to
+                            keep each other safe, the battles they fight to stay alive, and the tragedies they endure.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="slider-item fade">
+                <img src="./assets/images/trending/The_Black_Demon.jpg" alt="The Black Demon">
+                <div class="text-content">
+                    <div class="text-heading">
+                        <p>The Black Demon</p>
+                    </div>
+                    <div class="content-slider">
+                        <div class="btn-tags">
+                            <span class="tag">Drama</span>
+                            <span class="tag">Horror</span>
+                            <span class="tag">Thriller</span>
+                        </div>
+                        <div class="tags-icon">
+                            <div class="icon-tag">
+                                <img class="icon1" src="./assets/images/icon/Group.png" alt="">
+                                <p>2022</p>
+                            </div>
+                            <div class="icon-tag">
+                                <img class="icon2" src="./assets/images/icon/time1.png" alt="">
+                                <p> 3:12:00</p>
+                            </div>
+                            <div class="icon-tag">
+                                <img class="icon3" src="./assets/images/icon/start.png" alt="">
+                                <p>8.5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-description">
+                        <p>Paul Sturges takes his family on a trip to Mexico to inspect an oil
+                            rig his company owns. Once they get out there, he finds the place almost abandoned with only
+                            a
+                            few terrified workers left who tell him that the rig has been repeatedly attacked by a
+                            monstrous
+                            shark that is part of a Mexican legend.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item fade">
+                <img src="./assets/images/Fubar .png" alt="Fubar">
+                <div class="text-content">
+                    <h2 class="text-heading">Fubar</h2>
+                    <div class="content-slider">
+                        <div class="btn-tags">
+                            <span class="tag">Action</span>
+                            <span class="tag">Adventure</span>
+                            <span class="tag">Comedy</span>
+                        </div>
+                        <div class="tags-icon">
+                            <div class="icon-tag">
+                                <img class="icon1" src="./assets/images/icon/Group.png" alt="">
+                                <p>2022</p>
+                            </div>
+                            <div class="icon-tag">
+                                <img class="icon2" src="./assets/images/icon/time1.png" alt="">
+                                <p> 3:12:00</p>
+                            </div>
+                            <div class="icon-tag">
+                                <img class="icon3" src="./assets/images/icon/start.png" alt="">
+                                <p>8.5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-description">
+                        <p>A father and daughter have both been working as CIA Operatives for
+                            years, but each kept their involvement in the CIA hidden from the other, resulting in their
+                            entire relationship being a gigantic lie.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item fade">
+                <img src="./assets/images/Silo.png" alt="Silo">
+                <div class="text-content">
+                    <div class="text-heading">
+                        <p>Silo</p>
+                    </div>
+                    <div class="content-slider">
+                        <div class="btn-tags">
+                            <span class="tag">Drama</span>
+                            <span class="tag">Mystery</span>
+                            <span class="tag">Science Fiction</span>
+                        </div>
+                        <div class="tags-icon">
+                            <div class="icon-tag">
+                                <img class="icon1" src="./assets/images/icon/Group.png" alt="">
+                                <p>2022</p>
+                            </div>
+                            <div class="icon-tag">
+                                <img class="icon2" src="./assets/images/icon/time1.png" alt="">
+                                <p> 3:12:00</p>
+                            </div>
+                            <div class="icon-tag">
+                                <img class="icon3" src="./assets/images/icon/start.png" alt="">
+                                <p>8.5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-description">
+                        <p>Men and women live in a giant silo underground with several
+                            regulations which they believe are in place to protect them from the toxic and ruined world
+                            on
+                            the surface.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-scoll">
+                <!-- <div class="scoll-btn"></div> -->
+                <img class="dot" onclick="currentSlide(0)" src="./assets/images/icon/Ellipse 2.png" alt="">
+                <img class="dot" onclick="currentSlide(1)" src="./assets/images/icon/Ellipse 2.png" alt="">
+                <img class="dot" onclick="currentSlide(2)" src="./assets/images/icon/Ellipse 2.png" alt="">
+                <img class="dot" onclick="currentSlide(3)" src="./assets/images/icon/Ellipse 2.png" alt="">
+                <img class="dot" onclick="currentSlide(4)" src="./assets/images/icon/Ellipse 2.png" alt="">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- recently -->
+            <div class="recently-container ">
+                <div class="content-movie">
+                    <h2>Recently Updated</h2>
+                </div>
+                <div class="slider-container">
+                    <button class="slide-btn left-btn">
+                        <img src="./assets/images/icon/circle.png" alt="">
+                        <img class="icon-left" src="./assets/images/icon/Group 6.png" alt="">
+                    </button>
+
+                    <div class=" scroll-container">
+
+                        <div class=" col-4 s-col-full  movie-card ">
+                            <img src="./assets/images/recently/the_flash.jpg" alt="The Flash">
+                            <p>The Flash<br>Series 2 / EP 9<br>11/05/23</p>
+                        </div>
+                        <div class=" col-4 s-col-full  movie-card ">
+                            <img src="./assets/images/recently/fubar.jpg" alt="Fubar">
+                            <p>Fubar<br>Series 1 / EP 8<br>11/05/23</p>
+                        </div>
+                        <div class=" col-4 s-col-full  movie-card ">
+                            <img src="./assets/images/recently/manifest.jpg" alt="Manifest">
+                            <p>Manifest<br>Series 4 / EP 12<br>11/05/23</p>
+                        </div>
+                        <div class="col-4 s-col-full  movie-card ">
+                            <img src="./assets/images/recently/silo.jpg" alt="Silo">
+                            <p>Silo<br>Series 1 / EP 10<br>11/05/23</p>
+                        </div>
+                        <div class=" col-4 s-col-full  movie-card ">
+                            <img src="./assets/images/recently/the_flash.jpg" alt="The Flash">
+                            <p>The Flash<br>Series 2 / EP 9<br>11/05/23</p>
+                        </div>
+                        <div class=" col-4 s-col-full  movie-card ">
+                            <img src="./assets/images/recently/fubar.jpg" alt="Fubar">
+                            <p>Fubar<br>Series 1 / EP 8<br>11/05/23</p>
+                        </div>
+                        <div class=" col-4 s-col-full  movie-card ">
+                            <img src="./assets/images/recently/manifest.jpg" alt="Manifest">
+                            <p>Manifest<br>Series 4 / EP 12<br>11/05/23</p>
+                        </div>
+                        <div class="col-4 s-col-full  movie-card ">
+                            <img src="./assets/images/recently/silo.jpg" alt="Silo">
+                            <p>Silo<br>Series 1 / EP 10<br>11/05/23</p>
+                        </div>
+
+                    </div>
+                    <button class="slide-btn right-btn">
+                        <img src="./assets/images/icon/circle.png" alt="">
+                        <img class="icon-right" src="./assets/images/icon/Group 5.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <!-- Trending -->
+            <div class="trending-container">
+                <div class="header-trending">
+                    <h2>Trending</h2>
+                    <a href="#">View all
+                        <img src="./assets/images/icon/Vector (1).png" alt="">
+                    </a>
+                </div>
+                <div class="trending-content ">
+                    <div class="item-trending ">
+                        <img src="./assets/images/trending/Medellin.jpg" alt="Medellin">
+                        <div class="play-icon">
+                            <img src="./assets/images/icon/play.png" alt="">
+                        </div>
+                        <div class="info">
+                            <img src="./assets/images/icon/tine2.png" alt="">
+                            <p>3:12:00</p>
+                        </div>
+
+                        <div class="rating">
+                            <img src="./assets/images/icon/start.png" alt="">
+                            <p>8.0</p>
+                        </div>
+                        <div class="item-content">
+                            <p>Medellin</p>
+                            <div class="tags">
+                                <div class="tag-trend">Action</div>
+                                <div class="tag-trend ">Comedy</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-trending">
+                        <img src="./assets/images/trending/Fast_X.jpg" alt="Fast X">
+                        <div class="play-icon">
+                            <img src="./assets/images/icon/play.png" alt="">
+                        </div>
+                        <div class="info">
+                            <img src="./assets/images/icon/tine2.png" alt="">
+                            <p>3:12:00</p>
+                        </div>
+                        <div class="rating">
+                            <img src="./assets/images/icon/start.png" alt="">
+                            <p>8.0</p>
+                        </div>
+                        <div class="item-content">
+                            <p>Fast X</p>
+                            <div class="tags">
+                                <div class="tag-trend">Action</div>
+                                <div class="tag-trend">Crime</div>
+                                <div class="tag-trend ">Thriller</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-trending ">
+                        <img src="./assets/images/trending/The_Black_Demon.jpg" alt="The Black Demon">
+                        <div class="play-icon">
+                            <img src="./assets/images/icon/play.png" alt="">
+
+                        </div>
+                        <div class="info">
+                            <img src="./assets/images/icon/tine2.png" alt="">
+                            <p>3:12:00</p>
+                        </div>
+                        <div class="rating">
+                            <img src="./assets/images/icon/start.png" alt="">
+
+                            <p>8.0</p>
+                        </div>
+                        <div class="item-content">
+                            <p>The Black Demon</p>
+                            <div class="tags">
+                                <div class="tag-trend">Horror</div>
+                                <div class="tag-trend">Thriller</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- new release-movie -->
+            <div id="Movies" class="new-release">
+                <div class="header-release">
+                    <h2>New Release-Movies</h2>
+                    <a href="#">View all
+                        <img src="./assets/images/icon/Vector (1).png" alt="">
+                    </a>
+                </div>
+                <div class="release-content">
+                    <div class="item-release">
+                        <img src="./assets/images/new-release/Ghosted.jpg" alt="Ghosted">
+                        <div class="content-release">
+                            <p>Ghosted</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+                                    <img src="./assets/images/icon/tine2.png" alt="">
+                                    <p>3:12:00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="item-release">
+                        <img src="./assets/images/new-release/Join.jpg" alt="John Wick: Ch...">
+                        <div class="content-release">
+                            <p>John Wick: Chapter 4</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+                                    <img src="./assets/images/icon/tine2.png" alt="">
+                                    <p>3:12:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-release">
+                        <img src="./assets/images/new-release/Guardians.jpg" alt="Guardians of th..">
+                        <div class="content-release">
+                            <p>Guardians of the Galaxy</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+                                    <img src="./assets/images/icon/tine2.png" alt="">
+                                    <p>3:12:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-release">
+                        <img src="./assets/images/new-release/The Conven.jpg" alt="The Conven...">
+                        <div class="content-release">
+                            <p>The Convenant</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+                                    <img src="./assets/images/icon/tine2.png" alt="">
+                                    <p>3:12:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- new release-sẻies -->
+            <div id="Series" class="new-release">
+                <div class="header-release">
+                    <h2>New Release-Series</h2>
+                    <a href="#">View all
+                        <img src="./assets/images/icon/Vector (1).png" alt="">
+                    </a>
+                </div>
+                <div class="release-content">
+                    <div class="item-release">
+                        <img src="./assets/images/release-series/Silo.jpg" alt="Ghosted">
+                        <div class="info">
+                            <p>EP 6</p>
+                        </div>
+                        <div class="content-release">
+                            <p>Silo</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+                                    <p>Season 1</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="item-release">
+                        <img src="./assets/images//release-series/Black Knight.jpg" alt="John Wick: Ch...">
+                        <div class="info">
+                            <p>EP 6</p>
+                        </div>
+                        <div class="content-release">
+                            <p>Black Knight</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+
+                                    <p>Season 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-release">
+                        <img src="./assets/images/release-series/Drops of God.jpg" alt="Guardians of th..">
+                        <div class="info">
+                            <p>EP 6</p>
+                        </div>
+                        <div class="content-release">
+                            <p>Drops of God</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+
+                                    <p>Season 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-release">
+                        <img src="./assets/images/release-series/the-night-agent.jpg" alt="The Conven...">
+                        <div class="info">
+                            <p>EP 6</p>
+                        </div>
+                        <div class="content-release">
+                            <p>The Night Agent</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+
+                                    <p>Season 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Recommemded -->
+            <div id="Animation" class="recommend-container">
+                <div class="header-recommend">
+                    <div class="tags tag-recommend">
+                        <h2>Recommend</h2>
+                        <div class="tag-trend action">Movies</div>
+                        <div class="tag-trend no-action">Series</div>
+                        <div class="tag-trend no-action">Animation</div>
+                    </div>
+                    <a href="#">View all
+                        <img src="./assets/images/icon/Vector (1).png" alt="">
+                    </a>
+                </div>
+
+                <div class="recommend-body">
+                    <div class="recommend-content ">
+                        <div class="item-recommend">
+                            <img src="./assets/images/recomend/robots.jpg" alt="Ghosted">
+                            <div class="content-recommend">
+                                <p>Robots</p>
+                                <div class="tags">
+                                    <div class="tag-trend">CAM</div>
+                                    <div class="tag-trend tagg">
+                                        <img src="./assets/images/icon/tine2.png" alt="">
+                                        <p>3:12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="item-recommend">
+                            <img src="./assets/images/recomend/Love Again.jpg" alt="John Wick: Ch...">
+                            <div class="content-recommend">
+                                <p>Love Again</p>
+                                <div class="tags">
+                                    <div class="tag-trend">CAM</div>
+                                    <div class="tag-trend tagg">
+                                        <img src="./assets/images/icon/tine2.png" alt="">
+                                        <p>3:12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-recommend">
+                            <img src="./assets/images/recomend/Hypnotic.jpg" alt="Guardians of th..">
+                            <div class="content-recommend">
+                                <p>Hypnotic</p>
+                                <div class="tags">
+                                    <div class="tag-trend">CAM</div>
+                                    <div class="tag-trend tagg">
+                                        <img src="./assets/images/icon/tine2.png" alt="">
+                                        <p>3:12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-recommend">
+                            <img src="./assets/images/recomend/Paint.jpg" alt="The Conven...">
+                            <div class="content-recommend">
+                                <p>Paint</p>
+                                <div class="tags">
+                                    <div class="tag-trend">CAM</div>
+                                    <div class="tag-trend tagg">
+                                        <img src="./assets/images/icon/tine2.png" alt="">
+                                        <p>3:12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommend-content">
+                        <div class="item-recommend">
+                            <img src="./assets/images/recomend/Book Club.jpg" alt="Ghosted">
+                            <div class="content-recommend">
+                                <p>Book Club</p>
+                                <div class="tags">
+                                    <div class="tag-trend">CAM</div>
+                                    <div class="tag-trend tagg">
+                                        <img src="./assets/images/icon/tine2.png" alt="">
+                                        <p>3:12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="item-recommend">
+                            <img src="./assets/images/recomend/The Mother.jpg" alt="John Wick: Ch...">
+                            <div class="content-recommend">
+                                <p>The Mother</p>
+                                <div class="tags">
+                                    <div class="tag-trend">CAM</div>
+                                    <div class="tag-trend tagg">
+                                        <img src="./assets/images/icon/tine2.png" alt="">
+                                        <p>3:12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-recommend">
+                            <img src="./assets/images/recomend/January 6th.jpg" alt="Guardians of th..">
+                            <div class="content-recommend">
+                                <p>January 6th</p>
+                                <div class="tags">
+                                    <div class="tag-trend">CAM</div>
+                                    <div class="tag-trend tagg">
+                                        <img src="./assets/images/icon/tine2.png" alt="">
+                                        <p>3:12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-recommend">
+                            <img src="./assets/images/recomend/Sisu.jpg" alt="The Conven...">
+                            <div class="content-recommend">
+                                <p>Sisu</p>
+                                <div class="tags">
+                                    <div class="tag-trend">CAM</div>
+                                    <div class="tag-trend tagg">
+                                        <img src="./assets/images/icon/tine2.png" alt="">
+                                        <p>3:12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
