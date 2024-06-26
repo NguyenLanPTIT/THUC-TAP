@@ -1,940 +1,670 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: "Poppins", sans-serif;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    overflow-x: hidden;
-}
-
-.scroll-disabled {
-    position: fixed;
-    width: 100%;
-    overflow-y: scroll;
-
-}
-
-.pad-8 {
-    padding: 0 16px;
-}
-
-.mar-8 {
-    margin: 0 8px;
-}
-
-.Web {
-    width: 100%;
-}
-
-
-.navbar {
-    background-color: #000;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 102px;
-    position: fixed;
-    z-index: 100;
-    padding-top: 24px;
-    padding-bottom: 30px;
-}
-
-.nav-menu {
-    list-style: none;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: 600;
-
-}
-
-.nav-menu li {
-    display: inline;
-    position: relative;
-}
-
-.nav-menu a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-    padding: 0 10px;
-}
-
-.nav-menu a:hover {
-    color: #ff0000;
-}
-
-.register {
-    list-style: none;
-    display: inline;
-    position: relative;
-
-}
-
-.register a {
-    display: inline;
-    margin: 0;
-    text-decoration: none;
-    color: white;
-
-}
-
-.register a:hover {
-    color: red;
-}
-
-.search-container {
-    display: flex;
-    background-color: #fff;
-    border-radius: 25px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 416px;
-    overflow: hidden;
-    height: 48px;
-}
-
-#search-input {
-    border: none;
-    outline: none;
-    padding: 10px;
-    flex-grow: 1;
-    font-size: 16px;
-}
-
-.bell-button {
-    background-color: #000;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.bell-button:hover {
-    color: #2d73ac;
-}
-
-#search-button {
-    background-color: white;
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-    padding: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#search-button i {
-    color: black;
-    font-size: 16px;
-}
-
-
-/* slider */
-.slider {
-    position: relative;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.slider-control {
-    position: relative;
-    top: 11%;
-    z-index: 10;
-}
-
-.slider-item {
-    position: relative;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
-
-.slider img {
-    width: 100vw;
-    z-index: 10;
-}
-
-.text-content {
-    position: absolute;
-    margin: 0 160px;
-    top: 75%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1440px;
-    color: white;
-    text-align: left;
-    z-index: 20;
-    padding: 0 20px;
-}
-
-
-.text-heading {
-    /* height: 48px; */
-    font-family: Poppins;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 48px;
-    /* display: flex;
-    justify-content: center;
-    width: 100%; */
-}
-
-.text-heading h2 {
-    width: 40%;
-    text-align: start;
-}
-
-.content-slider {
-    display: flex;
-
-    margin-top: 8px;
-}
-
-.btn-tags {
-    display: flex;
-    justify-content: center;
-}
-
-.btn-tags .tag {
-    background-color: #fff;
-    color: #000;
-    border-radius: 20px;
-    padding: 10px 10px;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    margin: 4px;
-    display: flex;
-    align-items: center;
-}
-
-.tag:hover {
-    background-color: gray;
-}
-
-.tags-icon {
-    display: flex;
-    align-items: center;
-    padding: 10px 8px;
-    text-align: center;
-    margin-bottom: 5px;
-}
-
-.icon-tag {
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-}
-
-.icon-tag .icon1 {
-    width: 17.13px;
-    height: 17px;
-    margin-right: 5px;
-}
-
-.icon-tag .icon2 {
-    width: 13.3px;
-    margin-right: 5px;
-}
-
-.icon-tag .icon3 {
-    width: 17px;
-    height: 16px;
-    margin-right: 5px;
-}
-
-.text-description {
-    width: 100%;
-    margin-top: 24px;
-    font-size: 16px;
-    line-height: 1.5;
-    text-shadow: 0 0 1px #000;
-    display: flex;
-}
-
-.text-description p {
-    width: 50%;
-
-}
-
-.buttons {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-
-.watch-now,
-.watch-later {
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-family: Poppins;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
-    height: 76px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 20px;
-
-}
-
-.play-icons {
-    margin: 0 10px;
-}
-
-.clock-icon {
-    margin-left: 10px;
-}
-
-.watch-now {
-    left: 10px;
-    background-color: red;
-    transition: all 0.3s;
-    outline: none;
-}
-
-.watch-now:hover {
-    background-color: darkred;
-}
-
-.watch-later {
-    right: 10px;
-    /* background-color: gray; */
-    border: 3px solid red;
-    background-color: transparent;
-}
-
-.watch-later:hover {
-    background-color: darkgray;
-}
-
-.nenmodal .nenmodal2 {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: 1;
-    display: none;
-}
-
-.nenmodal .ndmodal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    background: #fff;
-    width: 600px;
-    z-index: 2;
-    padding: 20px;
-    box-sizing: border-box;
-    font-family: Poppins;
-    border-radius: 20px;
-    display: block;
-    position: fixed;
-    box-shadow: 0px 0px 10px #111;
-}
-
-.nenmodal .closemodal {
-    text-align: center;
-    margin-top: -40px;
-    margin-bottom: 10px;
-}
-
-.titlemodal {
-    font-weight: bold;
-    font-size: 20px;
-    margin-bottom: 10px;
-    color: #000;
-    display: flex;
-    justify-content: center;
-}
-
-.content-modal {
-    color: #000;
-    font-family: poppins;
-    justify-content: left;
-
-}
-
-.content-btn {
-    display: flex;
-    justify-content: right;
-    text-align: center;
-    cursor: pointer;
-}
-
-.content-btn .trend {
-    height: 32px;
-    border-radius: 5px;
-    background-color: #2d73ac;
-    text-align: center;
-    padding: 4px 8px;
-    margin: 0 8px;
-    color: #fff;
-}
-
-.closemodal button {
-    width: 40px;
-    height: 40px;
-    font-size: 30px;
-    padding: 0px;
-    border-radius: 100%;
-    background: #333;
-    color: #fff;
-    border: none;
-}
-
-.nenmodal.active .nenmodal2 {
-    display: block;
-}
-
-.nenmodal.active .ndmodal {
-    transition: all 300ms ease-in-out;
-    transform: translate(-50%, -50%) scale(1);
-}
-
-
-
-@media (max-width: 700px) {
-    .nenmodal .ndmodal {
-        width: 90%;
-    }
-}
-
-.slider-item {
-    display: none;
-}
-
-.slider-scoll {
-    position: absolute;
-    width: 21px;
-    height: 21px;
-    top: 95%;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.scoll-btn {
-    background-color: red;
-    width: 70px;
-    height: 15px;
-    border-radius: 12px;
-}
-
-.dot {
-    cursor: pointer;
-    margin: 0 10px;
-    border-radius: 50%;
-    transition: background-color 0.6s ease;
-}
-
-.active,
-.dot:hover {
-    background-color: red;
-    border-radius: 12px;
-
-}
-
-.fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 3s;
-    animation-name: fade;
-    animation-duration: 3s;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-}
-
-/* container */
-.container {
-    width: 1440px;
-    padding: 80px 160px;
-    margin: 0 auto;
-}
-
-/* recently */
-.recently-container {
-    padding-left: 20px;
-    width: 100%;
-
-}
-
-.slider-container {
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    justify-content: center;
-}
-
-.recently-container h2 {
-    width: 216px;
-    height: 36px;
-    top: 928px;
-    gap: 0px;
-    opacity: 0px;
-    font-family: Poppins;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 36px;
-    color: #fff;
-}
-
-.scroll-container {
-    display: flex;
-    align-items: center;
-    transition: transform 0.5s ease;
-}
-
-.movie-card {
-    padding: 20px 0;
-    padding-right: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
-    min-width: 22%;
-    box-sizing: border-box;
-}
-
-.movie-card img {
-    width: 65px;
-    height: 103px;
-    gap: 0px;
-    border-radius: 5px;
-    opacity: 0px;
-}
-
-.movie-card p {
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    text-align: left;
-    color: rgba(255, 255, 255, 1);
-    opacity: 0px;
-    padding-left: 24px;
-    width: 100%;
-
-}
-
-.slide-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 10;
-    background: none;
-    border: none;
-}
-
-.left-btn {
-    left: 0;
-}
-
-.icon-left {
-    z-index: 10;
-    position: absolute;
-
-}
-
-.right-btn {
-    right: 0;
-
-}
-
-.icon-right {
-    z-index: 10;
-    position: absolute;
-
-}
-
-button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-}
-
-/* Trending */
-.trending-container {
-    padding: 20px;
-    width: 100%;
-    margin: 40px 0;
-}
-
-.header-trending,
-.header-release,
-.header-recommend {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 36px;
-    margin-bottom: 24px;
-}
-
-.header-trending h2,
-.header-trending a,
-.header-release a,
-.header-release h2,
-.header-recommend h2,
-.header-recommend a {
-    width: 112px;
-    height: 36px;
-    font-family: Poppins;
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 36px;
-    color: #fff;
-
-}
-
-.header-trending a,
-.header-release a,
-.header-recommend a {
-    text-align: right;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.5);
-    width: 130px;
-    display: flex;
-    align-items: center;
-}
-
-.header-trending a img,
-.header-release a img,
-.header-recommend a img {
-    margin-left: 8px;
-}
-
-.trending-content,
-.recommend-content {
-    display: flex;
-    width: 100%;
-    height: 341px;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.item-trending {
-    background-color: #000;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-
-    width: 345px;
-    height: 341px;
-    border-radius: 10px;
-
-}
-
-.trending-content img {
-    width: 345px;
-    height: 293px;
-    border-radius: 10px;
-    object-fit: cover;
-
-}
-
-.play-icon img {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    width: 59px;
-    height: 59px;
-    top: 43%;
-}
-
-.info,
-.rating {
-    position: absolute;
-    top: 10px;
-    color: #fff;
-    font-size: 16px;
-    display: flex;
-    align-items: center;
-}
-
-.info {
-    left: 16px;
-}
-
-.info img {
-    width: 13.3px;
-    height: 13.3px;
-}
-
-.rating img {
-    width: 15px;
-    height: 16px;
-}
-
-.info p,
-.rating p {
-    padding: 5px 4px 4px 4px;
-}
-
-.item-trending .rating {
-    right: 16px;
-}
-
-.item-content {
-    height: 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #fff;
-
-
-}
-
-.item-content p {
-    font-size: 24px;
-    font-weight: 600;
-    height: 36px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-
-}
-
-#Movies .tags {
-    width: 121.3px;
-    display: flex;
-    /* justify-content: space-around; */
-
-}
-
-.tags {
-    display: flex;
-    align-items: center;
-    justify-content: right;
-
-}
-
-.trending-content .tag-trend {
-    margin-left: 12px;
-
-}
-
-.tag-trend {
-    display: flex;
-    align-items: center;
-    background-color: red;
-    border-radius: 10px;
-    padding: 8px;
-    font-size: 16px;
-    font-weight: 400;
-    height: 40px;
-}
-
-.tagg {
-    margin-left: 8px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-}
-
-/* New release-movie */
-.new-release {
-    padding: 20px;
-    width: 100%;
-    margin: 40px 0;
-}
-
-.release-content,
-.recommend-content {
-    display: flex;
-    width: 100%;
-    height: 392px;
-    justify-content: space-between;
-}
-
-.header-release h2,
-.header-recommend h2 {
-    width: 268px;
-    height: 36px;
-    top: 928px;
-}
-
-.item-release,
-.item-recommend {
-    background-color: #000;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-
-    width: 256px;
-    height: 392px;
-
-}
-
-.item-release img,
-.item-recommend img {
-    width: 256px;
-    height: 344px;
-    border-radius: 10px;
-}
-
-.content-release,
-.content-recommend {
-    display: flex;
-    height: 32px;
-    justify-content: space-between;
-    margin-top: 6px;
-    align-items: center;
-}
-
-#series .content-release .tags {
-    width: 121.3px;
-}
-
-.content-release p,
-.content-recommend p {
-    font-size: 16px;
-    font-weight: 500;
-    color: white;
-    font-family: Poppins;
-    height: 24px;
-    line-height: 24px;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-align: left;
-}
-
-.content-release .tag-trend,
-.content-recommend .tag-trend {
-    color: white;
-    height: 32px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    padding: 4px;
-    border-radius: 5px;
-}
-
-#Movies .content-release .tag-trend p,
-.content-recommend .tag-trend p {
-    display: flex;
-    align-items: center;
-    margin-left: 6px;
-}
-
-.tagg {
-    background-color: black;
-    border: 1px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.tagg img {
-    width: 13.3px;
-    height: 13.3px;
-}
-
-.item-release .info,
-.item-recommend .info {
-    background-color: red;
-    border-radius: 5px;
-    padding: 2px 4px 2px 4px;
-    font-size: 12px;
-    font-weight: 500;
-    height: 22px;
-    display: flex;
-    align-items: center;
-}
-
-/* recommend */
-.recommend-container {
-    padding: 20px;
-}
-
-.recommend-content {
-    margin-bottom: 24px;
-}
-
-.recommend-body {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.tag-recommend {
-    color: white;
-}
-
-.tag-recommend h2 {
-    width: 170px;
-}
-
-.tag-recommend .tag-trend {
-    margin: 0 8px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    height: 36px;
-}
-
-.no-action {
-    background-color: #000;
-    color: rgba(255, 255, 255, 0.5);
-    border: 2px solid rgba(255, 0, 0, 0.5);
-
-}
-
-@media (max-width: 1440px) {
-    .container {
-        width: 100%;
-        /* Cho phép container co giãn với viewport */
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIE WEBSITE</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+</head>
+
+<body>
+    <div class="Web">
+        <div class="navbar">
+            <ul class="nav-menu ">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#">Genre</a></li>
+                <li><a href="#">Country</a></li>
+            </ul>
+            <div class="search-container mar-8 pad-8 ">
+                <input type="text" placeholder="Search movies..." id="search-input">
+                <div id="search-button">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <ul class="nav-menu ">
+                <li><a href="#Movies">Movies</a></li>
+                <li><a href="#Series">Series</a></li>
+                <li><a href="#Animation">Animation</a></li>
+            </ul>
+            <div class="register pad-8">
+                <a href="#">Login/Signup</a>
+                <i class="bell-button fa fa-bell"></i>
+            </div>
+        </div>
+        <!-- slider -->
+        <div class="slider-control">
+            <div class="buttons">
+                <button id="watch" class="watch-now " onclick="momodal()">
+                    Watch Now
+                    <img class="play-icons" src="./assets/images/Vector.png" alt="play">
+                </button>
+                <button class="watch-later">Watch Later
+                    <img class="clock-icon" src="./assets/images/time.png" alt="">
+            </div>
+            <div class="nenmodal" id="nenmodal-1">
+                <div class="nenmodal2" onclick="momodal()"></div>
+                <div class="ndmodal">
+                    <div class="closemodal" id="close-modal-button"><button onclick="momodal()">×</button></div>
+                    <div class="titlemodal">Watch Now</div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4d_Uctu_wWI?si=b67FhUBCjnsJW2kG"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="content-btn">
+                        <div class="trend" onclick="momodal()">Thoát</div>
+                        <div class="trend" onclick="momodal()">OK</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider ">
+            <div class="slider-item fade">
+                <img src="./assets/images/avatar-way-of-water.jpg" alt="Avata">
+                <div class="text-content">
+                    <div class="text-heading">
+                        <p>Avatar: The Way of Water</p>
+                    </div>
+                    <div class="content-slider">
+                        <div class="btn-tags">
+                            <span class="tag">Action</span>
+                            <span class="tag">Adventure</span>
+                            <span class="tag">Science Fiction</span>
+                        </div>
+                        <div class="tags-icon">
+                            <div class="icon-tag">
+                                <img class="icon1" src="./assets/images/Group.png" alt="">
+                                <p>2022</p>
+                            </div>
+                            <div class="icon-tag">
+                                <img class="icon2" src="./assets/images/time1.png" alt="">
+                                <p> 3:12:00</p>
+                            </div>
+                            <div class="icon-tag">
+                                <img class="icon3" src="./assets/images/start.png" alt="">
+                                <p>8.5</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-description">
+                        <p>Set more than a decade after the events of the first film, learn the story of the
+                            Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths
+                            they go to keep each other safe, the battles they fight to stay alive, and the tragedies
+                            they endure.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item fade">
+                <img src="./assets/images/trending/Medellin.jpg" alt="Medellin">
+                <div class="text-content">
+                    <div class="text-heading">
+                        <p>Medellin</p>
+                    </div>
+                    <div class="content-slider">
+                        <div class="btn-tags">
+                            <span class="tag">Action</span>
+                            <span class="tag">Comedy</span>
+                        </div>
+                        <div class="tags-icon">
+                            <div class="icon-tag">
+                                <img class="icon1" src="./assets/images/Group.png" alt="">
+                                <p>2022</p>
+                            </div>
+                            <div class="icon-tag">
+                                <img class="icon2" src="./assets/images/time1.png" alt="">
+                                <p> 3:12:00</p>
+                            </div>
+                            <div class="icon-tag">
+                                <img class="icon3" src="./assets/images/start.png" alt="">
+                                <p>8.5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-description">
+                        <p>Set more than a decade after the events of the first film, learn the
+                            story of the
+                            Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths
+                            they go
+                            to
+                            keep each other safe, the battles they fight to stay alive, and the tragedies they endure.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="slider-item fade">
+                <img src="./assets/images/trending/The_Black_Demon.jpg" alt="The Black Demon">
+                <div class="text-content">
+                    <div class="text-heading">
+                        <p>The Black Demon</p>
+                    </div>
+                    <div class="content-slider">
+                        <div class="btn-tags">
+                            <span class="tag">Drama</span>
+                            <span class="tag">Horror</span>
+                            <span class="tag">Thriller</span>
+                        </div>
+                        <div class="tags-icon">
+                            <div class="icon-tag">
+                                <img class="icon1" src="./assets/images/Group.png" alt="">
+                                <p>2022</p>
+                            </div>
+                            <div class="icon-tag">
+                                <img class="icon2" src="./assets/images/time1.png" alt="">
+                                <p> 3:12:00</p>
+                            </div>
+                            <div class="icon-tag">
+                                <img class="icon3" src="./assets/images/start.png" alt="">
+                                <p>8.5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-description">
+                        <p>Paul Sturges takes his family on a trip to Mexico to inspect an oil
+                            rig his company owns. Once they get out there, he finds the place almost abandoned with only
+                            a
+                            few terrified workers left who tell him that the rig has been repeatedly attacked by a
+                            monstrous
+                            shark that is part of a Mexican legend.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item fade">
+                <img src="./assets/images/Fubar .png" alt="Fubar">
+                <div class="text-content">
+                    <h2 class="text-heading">Fubar</h2>
+                    <div class="content-slider">
+                        <div class="btn-tags">
+                            <span class="tag">Action</span>
+                            <span class="tag">Adventure</span>
+                            <span class="tag">Comedy</span>
+                        </div>
+                        <div class="tags-icon">
+                            <div class="icon-tag">
+                                <img class="icon1" src="./assets/images/Group.png" alt="">
+                                <p>2022</p>
+                            </div>
+                            <div class="icon-tag">
+                                <img class="icon2" src="./assets/images/time1.png" alt="">
+                                <p> 3:12:00</p>
+                            </div>
+                            <div class="icon-tag">
+                                <img class="icon3" src="./assets/images/start.png" alt="">
+                                <p>8.5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-description">
+                        <p>A father and daughter have both been working as CIA Operatives for
+                            years, but each kept their involvement in the CIA hidden from the other, resulting in their
+                            entire relationship being a gigantic lie.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-item fade">
+                <img src="./assets/images/Silo.png" alt="Silo">
+                <div class="text-content">
+                    <div class="text-heading">
+                        <p>Silo</p>
+                    </div>
+                    <div class="content-slider">
+                        <div class="btn-tags">
+                            <span class="tag">Drama</span>
+                            <span class="tag">Mystery</span>
+                            <span class="tag">Science Fiction</span>
+                        </div>
+                        <div class="tags-icon">
+                            <div class="icon-tag">
+                                <img class="icon1" src="./assets/images/Group.png" alt="">
+                                <p>2022</p>
+                            </div>
+                            <div class="icon-tag">
+                                <img class="icon2" src="./assets/images/time1.png" alt="">
+                                <p> 3:12:00</p>
+                            </div>
+                            <div class="icon-tag">
+                                <img class="icon3" src="./assets/images/start.png" alt="">
+                                <p>8.5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-description">
+                        <p>Men and women live in a giant silo underground with several
+                            regulations which they believe are in place to protect them from the toxic and ruined world
+                            on
+                            the surface.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-scoll">
+                <!-- <div class="scoll-btn"></div> -->
+                <img class="dot" onclick="currentSlide(0)" src="./assets/images/Line 1.png" alt="">
+                <img class="dot" onclick="currentSlide(1)" src="./assets/images/Ellipse 2.png" alt="">
+                <img class="dot" onclick="currentSlide(2)" src="./assets/images/Ellipse 2.png" alt="">
+                <img class="dot" onclick="currentSlide(3)" src="./assets/images/Ellipse 2.png" alt="">
+                <img class="dot" onclick="currentSlide(4)" src="./assets/images/Ellipse 2.png" alt="">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <!-- recently -->
+            <div class="recently-container ">
+                <div class="content-movie">
+                    <h2>Recently Updated</h2>
+                </div>
+                <div class="slider-container">
+                    <button class="slide-btn left-btn">
+                        <img src="./assets/images/circle.png" alt="">
+                        <img class="icon-left" src="./assets/images/Group 6.png" alt="">
+                    </button>
+
+                    <div class=" scroll-container">
+
+                        <div class=" col-4 s-col-full  movie-card ">
+                            <img src="./assets/images/recently/the_flash.jpg" alt="The Flash">
+                            <p>The Flash<br>Series 2 / EP 9<br>11/05/23</p>
+                        </div>
+                        <div class=" col-4 s-col-full  movie-card ">
+                            <img src="./assets/images/recently/fubar.jpg" alt="Fubar">
+                            <p>Fubar<br>Series 1 / EP 8<br>11/05/23</p>
+                        </div>
+                        <div class=" col-4 s-col-full  movie-card ">
+                            <img src="./assets/images/recently/manifest.jpg" alt="Manifest">
+                            <p>Manifest<br>Series 4 / EP 12<br>11/05/23</p>
+                        </div>
+                        <div class="col-4 s-col-full  movie-card ">
+                            <img src="./assets/images/recently/silo.jpg" alt="Silo">
+                            <p>Silo<br>Series 1 / EP 10<br>11/05/23</p>
+                        </div>
+                        <div class=" col-4 s-col-full  movie-card ">
+                            <img src="./assets/images/recently/the_flash.jpg" alt="The Flash">
+                            <p>The Flash<br>Series 2 / EP 9<br>11/05/23</p>
+                        </div>
+                        <div class=" col-4 s-col-full  movie-card ">
+                            <img src="./assets/images/recently/fubar.jpg" alt="Fubar">
+                            <p>Fubar<br>Series 1 / EP 8<br>11/05/23</p>
+                        </div>
+                        <div class=" col-4 s-col-full  movie-card ">
+                            <img src="./assets/images/recently/manifest.jpg" alt="Manifest">
+                            <p>Manifest<br>Series 4 / EP 12<br>11/05/23</p>
+                        </div>
+                        <div class="col-4 s-col-full  movie-card ">
+                            <img src="./assets/images/recently/silo.jpg" alt="Silo">
+                            <p>Silo<br>Series 1 / EP 10<br>11/05/23</p>
+                        </div>
+
+                    </div>
+                    <button class="slide-btn right-btn">
+                        <img src="./assets/images/circle.png" alt="">
+                        <img class="icon-right" src="./assets/images/Group 5.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <!-- Trending -->
+            <div class="trending-container">
+                <div class="header-trending">
+                    <h2>Trending</h2>
+                    <a href="#">View all
+                        <img src="./assets/images/Vector (1).png" alt="">
+                    </a>
+                </div>
+                <div class="trending-content ">
+                    <div class="item-trending ">
+                        <img src="./assets/images/trending/Medellin.jpg" alt="Medellin">
+                        <div class="play-icon">
+                            <img src="./assets/images/play.png" alt="">
+                        </div>
+                        <div class="info">
+                            <img src="./assets/images/tine2.png" alt="">
+                            <p>3:12:00</p>
+                        </div>
+
+                        <div class="rating">
+                            <img src="./assets/images/start.png" alt="">
+                            <p>8.0</p>
+                        </div>
+                        <div class="item-content">
+                            <p>Medellin</p>
+                            <div class="tags">
+                                <div class="tag-trend">Action</div>
+                                <div class="tag-trend ">Comedy</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-trending">
+                        <img src="./assets/images/trending/Fast_X.jpg" alt="Fast X">
+                        <div class="play-icon">
+                            <img src="./assets/images/play.png" alt="">
+                        </div>
+                        <div class="info">
+                            <img src="./assets/images/tine2.png" alt="">
+                            <p>3:12:00</p>
+                        </div>
+                        <div class="rating">
+                            <img src="./assets/images/start.png" alt="">
+                            <p>8.0</p>
+                        </div>
+                        <div class="item-content">
+                            <p>Fast X</p>
+                            <div class="tags">
+                                <div class="tag-trend">Action</div>
+                                <div class="tag-trend">Crime</div>
+                                <div class="tag-trend ">Thriller</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-trending ">
+                        <img src="./assets/images/trending/The_Black_Demon.jpg" alt="The Black Demon">
+                        <div class="play-icon">
+                            <img src="./assets/images/play.png" alt="">
+
+                        </div>
+                        <div class="info">
+                            <img src="./assets/images/tine2.png" alt="">
+                            <p>3:12:00</p>
+                        </div>
+                        <div class="rating">
+                            <img src="./assets/images/start.png" alt="">
+
+                            <p>8.0</p>
+                        </div>
+                        <div class="item-content">
+                            <p>The Black Demon</p>
+                            <div class="tags">
+                                <div class="tag-trend">Horror</div>
+                                <div class="tag-trend">Thriller</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- new release-movie -->
+            <div id="Movies" class="new-release">
+                <div class="header-release">
+                    <h2>New Release-Movies</h2>
+                    <a href="#">View all
+                        <img src="./assets/images/Vector (1).png" alt="">
+                    </a>
+                </div>
+                <div class="release-content">
+                    <div class="item-release">
+                        <img src="./assets/images/new-release/Ghosted.jpg" alt="Ghosted">
+                        <div class="content-release">
+                            <p>Ghosted</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+                                    <img src="./assets/images/tine2.png" alt="">
+                                    <p>3:12:00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="item-release">
+                        <img src="./assets/images/new-release/Join.jpg" alt="John Wick: Ch...">
+                        <div class="content-release">
+                            <p>John Wick: Chapter 4</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+                                    <img src="./assets/images/tine2.png" alt="">
+                                    <p>3:12:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-release">
+                        <img src="./assets/images/new-release/Guardians.jpg" alt="Guardians of th..">
+                        <div class="content-release">
+                            <p>Guardians of the Galaxy</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+                                    <img src="./assets/images/tine2.png" alt="">
+                                    <p>3:12:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-release">
+                        <img src="./assets/images/new-release/The Conven.jpg" alt="The Conven...">
+                        <div class="content-release">
+                            <p>The Convenant</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+                                    <img src="./assets/images/tine2.png" alt="">
+                                    <p>3:12:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- new release-sẻies -->
+            <div id="Series" class="new-release">
+                <div class="header-release">
+                    <h2>New Release-Series</h2>
+                    <a href="#">View all
+                        <img src="./assets/images/Vector (1).png" alt="">
+                    </a>
+                </div>
+                <div class="release-content">
+                    <div class="item-release">
+                        <img src="./assets/images/release-series/Silo.jpg" alt="Ghosted">
+                        <div class="info">
+                            <p>EP 6</p>
+                        </div>
+                        <div class="content-release">
+                            <p>Silo</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+                                    <p>Season 1</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="item-release">
+                        <img src="./assets/images//release-series/Black Knight.jpg" alt="John Wick: Ch...">
+                        <div class="info">
+                            <p>EP 6</p>
+                        </div>
+                        <div class="content-release">
+                            <p>Black Knight</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+
+                                    <p>Season 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-release">
+                        <img src="./assets/images/release-series/Drops of God.jpg" alt="Guardians of th..">
+                        <div class="info">
+                            <p>EP 6</p>
+                        </div>
+                        <div class="content-release">
+                            <p>Drops of God</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+
+                                    <p>Season 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-release">
+                        <img src="./assets/images/release-series/the-night-agent.jpg" alt="The Conven...">
+                        <div class="info">
+                            <p>EP 6</p>
+                        </div>
+                        <div class="content-release">
+                            <p>The Night Agent</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+
+                                    <p>Season 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Recommemded -->
+            <div id="Animation" class="recommend-container">
+                <div class="header-recommend">
+                    <div class="tags tag-recommend">
+                        <h2>Recommend</h2>
+                        <div class="tag-trend action">Movies</div>
+                        <div class="tag-trend no-action">Series</div>
+                        <div class="tag-trend no-action">Animation</div>
+                    </div>
+                    <a href="#">View all
+                        <img src="./assets/images/Vector (1).png" alt="">
+                    </a>
+                </div>
+
+                <div class="recommend-body">
+                    <div class="recommend-content ">
+                        <div class="item-recommend">
+                            <img src="./assets/images/recomend/robots.jpg" alt="Ghosted">
+                            <div class="content-recommend">
+                                <p>Robots</p>
+                                <div class="tags">
+                                    <div class="tag-trend">CAM</div>
+                                    <div class="tag-trend tagg">
+                                        <img src="./assets/images/tine2.png" alt="">
+                                        <p>3:12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="item-recommend">
+                            <img src="./assets/images/recomend/Love Again.jpg" alt="John Wick: Ch...">
+                            <div class="content-recommend">
+                                <p>Love Again</p>
+                                <div class="tags">
+                                    <div class="tag-trend">CAM</div>
+                                    <div class="tag-trend tagg">
+                                        <img src="./assets/images/tine2.png" alt="">
+                                        <p>3:12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-recommend">
+                            <img src="./assets/images/recomend/Hypnotic.jpg" alt="Guardians of th..">
+                            <div class="content-recommend">
+                                <p>Hypnotic</p>
+                                <div class="tags">
+                                    <div class="tag-trend">CAM</div>
+                                    <div class="tag-trend tagg">
+                                        <img src="./assets/images/tine2.png" alt="">
+                                        <p>3:12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-recommend">
+                            <img src="./assets/images/recomend/Paint.jpg" alt="The Conven...">
+                            <div class="content-recommend">
+                                <p>Paint</p>
+                                <div class="tags">
+                                    <div class="tag-trend">CAM</div>
+                                    <div class="tag-trend tagg">
+                                        <img src="./assets/images/tine2.png" alt="">
+                                        <p>3:12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommend-content">
+                        <div class="item-recommend">
+                            <img src="./assets/images/recomend/Book Club.jpg" alt="Ghosted">
+                            <div class="content-recommend">
+                                <p>Book Club</p>
+                                <div class="tags">
+                                    <div class="tag-trend">CAM</div>
+                                    <div class="tag-trend tagg">
+                                        <img src="./assets/images/tine2.png" alt="">
+                                        <p>3:12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="item-recommend">
+                            <img src="./assets/images/recomend/The Mother.jpg" alt="John Wick: Ch...">
+                            <div class="content-recommend">
+                                <p>The Mother</p>
+                                <div class="tags">
+                                    <div class="tag-trend">CAM</div>
+                                    <div class="tag-trend tagg">
+                                        <img src="./assets/images/tine2.png" alt="">
+                                        <p>3:12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-recommend">
+                            <img src="./assets/images/recomend/January 6th.jpg" alt="Guardians of th..">
+                            <div class="content-recommend">
+                                <p>January 6th</p>
+                                <div class="tags">
+                                    <div class="tag-trend">CAM</div>
+                                    <div class="tag-trend tagg">
+                                        <img src="./assets/images/tine2.png" alt="">
+                                        <p>3:12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-recommend">
+                            <img src="./assets/images/recomend/Sisu.jpg" alt="The Conven...">
+                            <div class="content-recommend">
+                                <p>Sisu</p>
+                                <div class="tags">
+                                    <div class="tag-trend">CAM</div>
+                                    <div class="tag-trend tagg">
+                                        <img src="./assets/images/tine2.png" alt="">
+                                        <p>3:12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
