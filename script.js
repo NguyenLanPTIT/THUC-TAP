@@ -91,9 +91,9 @@ function currentSlide(n) {
     var dots = document.getElementsByClassName("dot");
     for (var i = 0; i < dots.length; i++) {
         if (i === n) {
-            dots[i].src = './assets/images/icon/Line 1.png';  // Đường dẫn tới ảnh cho nút active
+            dots[i].src = './assets/images/Line 1.png';  // Đường dẫn tới ảnh cho nút active
         } else {
-            dots[i].src = './assets/images/icon/Ellipse 2.png';  // Đường dẫn tới ảnh ban đầu
+            dots[i].src = './assets/images/Ellipse 2.png';  // Đường dẫn tới ảnh ban đầu
         }
     }
 }
