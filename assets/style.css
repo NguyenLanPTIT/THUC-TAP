@@ -69,8 +69,10 @@
   
   .register {
     list-style: none;
-    display: inline;
+    display: flex;
     position: relative;
+    justify-content: center;
+    align-items: center;
   }
   
   .register a {
