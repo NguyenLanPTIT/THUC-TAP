@@ -9,11 +9,13 @@ function disableScroll() {
   scrollTop = documentElement.scrollTop;
   body.style.top = `-${scrollTop}px`;
   body.classList.add("scroll-disabled");
+
 }
 function enableScroll() {
   body.classList.remove("scroll-disabled");
   documentElement.scrollTop = scrollTop;
   body.style.removeProperty("top");
+ 
 }
 function momodal(event) {
   if (event) event.preventDefault();
@@ -22,13 +24,61 @@ function momodal(event) {
     modal.classList.remove("active");
     isModalOpen = false;
     enableScroll();
+    startSlider();
+
   } else {
     modal.classList.add("active");
     modal.style.display = "block";
     isModalOpen = true;
     disableScroll();
+    stopSlider();
   }
 }
+
+// slider
+
+var slideIndex;
+var interval;
+var dots = document.getElementsByClassName("dot");
+function showSlides() {
+  var slides = document.getElementsByClassName("slider-item");
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex].style.display = "block";
+  dots[slideIndex].className += " active";
+  slideIndex++;
+
+  if (slideIndex > slides.length - 1) {
+    slideIndex = 0;
+  }
+}
+
+showSlides((slideIndex = 0));
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+function stopSlider() {
+  clearInterval(interval);
+}
+
+function startSlider() {
+  interval = setInterval(showSlides, 5000);
+  showSlides();
+}
+startSlider();
+
+function currentSlide(n) {
+  slideIndex = n;
+  showSlides();
+}
+
+
+
 
 // recently
 document.addEventListener("DOMContentLoaded", function () {
@@ -60,31 +110,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateButtonStatus();
 });
-
-// slider
-
-var slideIndex;
-var dots = document.getElementsByClassName("dot");
-function showSlides() {
-  var slides = document.getElementsByClassName("slider-item");
-  for (var i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-
-  slides[slideIndex].style.display = "block";
-  dots[slideIndex].className += " active";
-  slideIndex++;
-
-  if (slideIndex > slides.length - 1) {
-    slideIndex = 0;
-  }
-}
-
-const interval = setInterval(showSlides, 5000);
-showSlides((slideIndex = 0));
-function currentSlide(n) {
-  showSlides((slideIndex = n));
-}
