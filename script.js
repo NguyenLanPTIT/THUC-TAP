@@ -58,25 +58,12 @@ function showSlides() {
     slideIndex = 0;
   }
 }
-// interval = setInterval(showSlides, 5000);
+ interval = setInterval(showSlides, 5000);
 showSlides((slideIndex = 0));
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
-// function stopSlider() {
-//   clearInterval(interval);
-// }
 
-// function startSlider() {
-//   interval = setInterval(showSlides, 5000);
-//   showSlides();
-// }
-// startSlider();
-
-// function currentSlide(n) {
-//   slideIndex = n;
-//   showSlides();
-// }
 
 
 
