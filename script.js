@@ -9,7 +9,6 @@ function disableScroll() {
   scrollTop = documentElement.scrollTop;
   body.style.top = `-${scrollTop}px`;
   body.classList.add("scroll-disabled");
-
 }
 function enableScroll() {
   body.classList.remove("scroll-disabled");
@@ -19,19 +18,21 @@ function enableScroll() {
 }
 function momodal(event) {
   if (event) event.preventDefault();
+  var navOverlay = document.getElementById('nav-overlay');
   if (isModalOpen) {
     modal.style.display = "none";
     modal.classList.remove("active");
+    navOverlay.style.display = "none";
     isModalOpen = false;
     enableScroll();
-    startSlider();
 
   } else {
     modal.classList.add("active");
     modal.style.display = "block";
+    navOverlay.style.display = "block";
     isModalOpen = true;
     disableScroll();
-    stopSlider();
+
   }
 }
 
@@ -57,25 +58,25 @@ function showSlides() {
     slideIndex = 0;
   }
 }
-
+// interval = setInterval(showSlides, 5000);
 showSlides((slideIndex = 0));
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
-function stopSlider() {
-  clearInterval(interval);
-}
+// function stopSlider() {
+//   clearInterval(interval);
+// }
 
-function startSlider() {
-  interval = setInterval(showSlides, 5000);
-  showSlides();
-}
-startSlider();
+// function startSlider() {
+//   interval = setInterval(showSlides, 5000);
+//   showSlides();
+// }
+// startSlider();
 
-function currentSlide(n) {
-  slideIndex = n;
-  showSlides();
-}
+// function currentSlide(n) {
+//   slideIndex = n;
+//   showSlides();
+// }
 
 
 
