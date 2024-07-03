@@ -945,6 +945,5 @@ button:disabled {
 @media (max-width: 1440px) {
   .container {
     width: 100%;
-    /* Cho phép container co giãn với viewport */
   }
 }
