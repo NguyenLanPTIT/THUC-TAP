@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/components.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="Web">
+        <div id="navbar" class="navbar">
+            <ul class="nav-menu ">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#">Genre</a></li>
+                <li><a href="#">Country</a></li>
+            </ul>
+            <div class="search-container mar-8 pad-8 ">
+                <input type="text" placeholder="Search movies..." id="search-input">
+                <div id="search-button">
+                    <img src="./assets/images/search.svg" alt="">
+                </div>
+            </div>
+            <ul class="nav-menu ">
+                <li><a href="#Movies">Movies</a></li>
+                <li><a href="#Series">Series</a></li>
+                <li><a href="#Animation">Animation</a></li>
+            </ul>
+            <div class="register pad-8">
+                <a href="#">Login/Signup</a>
+                <img class="bell-button " src="./assets/images/thongbao.svg" alt="">
+            </div>
+        </div>
+        <div id="nav-overlay" class="nav-overlay"></div>
+        <!-- slider -->
+        <div class="video-container ">
+            <div class="video" id="video" >
+                <img class="slider" src="./assets/images/slider2.png" alt="Avata">
+            </div>
+            <div class="controls">
+                <img class="room-icon" src="./assets/images/room1.svg" alt="">
+                <img class="range" src="./assets/images/Group 9.png" alt="">
+                <div class="contol-desc">
+                    <div class="play">
+                        <p>38:18/50:38</p>
+                        <img src="./assets/images/radio.svg" alt="">
+                    </div>
+                    <div class="mute">
+                        <img src="./assets/images/reset.svg" alt="">
+                        <img class="icon-plays" src="./assets/images/play.svg" alt="">
+                        <img src="./assets/images/fast.svg" alt="">
+                    </div>
+                    <div class="full-screen">
+                        <img src="./assets/images/cc.svg" alt="">
+                        <img class="icon-setup" src="./assets/images/setup.svg" alt="">
+                        <img src="./assets/images/room.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container">
+            <div class="movie-info">
+                <div class="movie-image">
+                    <img src="./assets/images/release-series/Silo.jpg" alt="">
+                </div>
+                <div class="movie-content">
+                    <div class="text-heading">
+                        <p>Silo</p>
+                        <button class="add">
+                            <img src="./assets/images/add.svg" alt="">
+                            Add to Favourite
+                        </button>
+                    </div>
+                    <div class="content-slider">
+                        <div class="btn-tags">
+                            <span class="tag">Drama</span>
+                            <span class="tag">Science Fiction</span>
+                        </div>
+                        <div class="tags-icon">
+                            <div class="icon-tag">
+                                <img class="icon1" src="./assets/images/Group.png" alt="">
+                                <p>2022</p>
+                            </div>
+                            <div class="icon-tag">
+                                <img class="icon2" src="./assets/images/Vector.svg" alt="">
+                                <p> 3:12:00</p>
+                            </div>
+                            <div class="icon-tag">
+                                <img class="icon3" src="./assets/images/start.png" alt="">
+                                <p>8.5</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="text-description">
+                        <p>In a ruined and toxic future, a community exists in a giant underground silo that plunges
+                            hundreds of stories deep. There, men and women live in a society full of regulations they
+                            believe are meant to protect them.</p>
+                    </div>
+                    <div class="details">
+                        <div class="detail-item"><span class="label">Country  :</span><span class="value">United States</span></div>
+                        <div class="detail-item"><span class="label">Genre  :</span><span class="value">Drama, Science Fiction</span></div>
+                        <div class="detail-item"><span class="label">Date Release  :</span><span class="value">May 05 2023</span></div>
+                        <div class="detail-item"><span class="label">Production  :</span><span class="value">AMC Studios</span></div>
+                        <div class="detail-item"><span class="label">Cast  :</span><span class="value">Tim Robbins, Rebecca Ferguson, Avi Nash, Rashida Jones, David Oyewolo, Tim Robbins</span></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="season-dropdown">
+                <div class="season-heading">
+                    <p>Season</p>
+                    <img src="./assets/images/down.svg" alt="">
+                </div>
+                <div class="episode-list">
+                    <button class="episode active ">
+                        <img class="abc" src="./assets/images/play2.svg" alt="">
+                        Episode 1: Freedom Day</button>
+                    <button class="episode ">
+                        <img src="./assets/images/play3.svg" alt="">
+                        Episode 2: Holston's Pick</button>
+                    <button class="episode">
+                        <img src="./assets/images/play3.svg" alt="">
+                        Episode 3: Machines
+                    </button>
+                    <button class="episode ">
+                        <img src="./assets/images/play3.svg" alt="">
+                        Episode 4: Truth</button>
+                    <button class="episode ">
+                        <img src="./assets/images/play3.svg" alt="">
+                        Episode 5: The Janitor’s Boy</button>
+                    <button class="episode ">
+                        <img src="./assets/images/play3.svg" alt="">
+                        Episode 6: The Relic</button>
+                </div>
+            </div>
+            <div class="new-release">
+                <div class="header-release">
+                    <h2>You may also like</h2>
+                </div>
+                <div class="release-body"></div>
+                <div class="release-content">
+                    <div class="item-release">
+                        <a class="img-container">
+                            <img src="./assets/images//release-series/Black Knight.jpg" alt="John Wick: Ch...">
+                            <div class="img-overlay"></div>
+                        </a>
+
+                        <div class="content-release">
+                            <p>Black Knight</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+
+                                    <p>Season 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-release">
+                        <a href="./components.html" class="img-container">
+                            <img src="./assets/images/release-series/Drops of God.jpg" alt="Guardians of th..">
+                            <div class="img-overlay"></div>
+                        </a>
+
+                        <div class="content-release">
+                            <p>Drops of God</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+
+                                    <p>Season 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-release">
+                        <a href="./components.html" class="img-container">
+                            <img src="./assets/images/Rectangle 13.png" alt="Scoop">
+                            <div class="img-overlay"></div>
+                        </a>
+                        <div class="content-release">
+                            <p>Scoop</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+
+                                    <p>Season 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-release">
+                        <a href="./components.html" class="img-container">
+                            <img src="./assets/images/The Prank Panel.png" alt="The Prank Panel">
+                            <div class="img-overlay"></div>
+                        </a>
+                        <div class="content-release">
+                            <p>The Prank Panel</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+                                    <p>Season 1</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="release-content">
+                    <div class="item-release">
+                        <a href="./components.html" class="img-container">
+                            <img src="./assets/images/Nikita.png" alt="Nikita">
+                            <div class="img-overlay"></div>
+                        </a>
+
+                        <div class="content-release">
+                            <p>Nikita</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+
+                                    <p>Season 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-release">
+                        <a href="./components.html" class="img-container">
+                            <img src="./assets/images/From.png" alt="From">
+                            <div class="img-overlay"></div>
+                        </a>
+
+                        <div class="content-release">
+                            <p>From</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+                                    <p>Season 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-release">
+                        <a href="./components.html" class="img-container">
+                            <img src="./assets/images/Spy Master.png" alt="Spy/Master">
+                            <div class="img-overlay"></div>
+                        </a>
+                        <div class="content-release">
+                            <p>Spy/Master</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+
+                                    <p>Season 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-release">
+                        <a href="./components.html" class="img-container">
+                            <img src="./assets/images/Little Bird.png" alt="Little Bird">
+                            <div class="img-overlay"></div>
+                        </a>
+                        <div class="content-release">
+                            <p>Little Bird</p>
+                            <div class="tags">
+                                <div class="tag-trend">HD</div>
+                                <div class="tag-trend tagg">
+                                    <p>Season 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment-container">
+                <div class="content-movie">
+                    <h2>Comments</h2>
+                </div>
+                <div class=" scroll-container">
+                    <div class=" movie-card ">
+                        <a class="img-container">
+                            <img src="./assets/images/Comment1.png" alt="James">
+                            <div class="img-overlay"></div>
+                        </a>
+                        <div class="card-input">
+                            <p>James</p>
+                            <input type="text" placeholder="Write your comments here....." id="comment-input">
+                        </div>
+                        
+                    </div>
+                    <div class="  movie-card ">
+                        <a class="img-container">
+                            <img src="./assets/images/Comment2.png" alt="Fubar">
+                            <div class="img-overlay"></div>
+                        </a>
+                        <div class="comment-content">
+                            <p>Arlene<br>12/06/2020<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo con</p>
+                                <div class="react">
+                                    <div class="like">
+                                        <img src="./assets/images/like.svg" alt="">
+                                        <p>10</p>
+                                    </div>
+                                    <img src="./assets/images/dislike.svg" alt="">
+                                    <p>Reply</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="  movie-card ">
+                        <a class="img-container">
+                            <img src="./assets/images/Comment3.png" alt="Manifest">
+                            <div class="img-overlay"></div>
+                        </a>
+                        <div class="comment-content">
+                            <p>Arlene<br>12/06/2020<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo con</p>
+                                <div class="react">
+                                    <div class="like">
+                                        <img src="./assets/images/like.svg" alt="">
+                                        <p>10</p>
+                                    </div>
+                                    <img src="./assets/images/dislike.svg" alt="">
+                                    <p>Reply</p>
+                                </div>
+                        </div>
+            
+                    </div>
+                    <div class=" movie-card ">
+                        <a class="img-container">
+                            <img src="./assets/images/Comment4.png" alt="Silo">
+                            <div class="img-overlay"></div>
+                        </a>
+                        <div class="comment-content">
+                            <p>Arlene<br>12/06/2020<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                laboris nisi ut aliquip ex ea commodo con</p>
+                                <div class="react">
+                                    <img src="./assets/images/like.svg" alt="">
+                                    <img src="./assets/images/dislike.svg" alt="">
+                                    <p>Reply</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
