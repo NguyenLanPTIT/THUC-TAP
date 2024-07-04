@@ -440,6 +440,7 @@ body::-webkit-scrollbar {
     justify-content: center;
     text-align: center;
     align-items: center;
+    border: none;
 
 }
 
