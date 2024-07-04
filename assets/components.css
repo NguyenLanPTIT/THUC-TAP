@@ -513,7 +513,7 @@ body::-webkit-scrollbar {
 }
 
 .accordion-header {
-    background: rgb(212, 206, 206);
+    background: rgb(223, 218, 218);
     color:#333;
     padding: 10px;
     cursor: pointer;
