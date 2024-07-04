@@ -451,6 +451,8 @@ body::-webkit-scrollbar {
 
 }
 
+
+
 /* season */
 
 .season-dropdown {
@@ -488,52 +490,61 @@ body::-webkit-scrollbar {
     margin: 0 4px;
 }
 
-.episode-list {
-    /* display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between; */
+
+.accordion {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
     border: none;
 }
 
-.episode {
-    text-align: left;
-    background: rgba(217, 217, 217, 1);
-    border-radius: 5px;
-    color: #000;
-    padding: 10px 10px 10px 16px;
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    border: none;
+.accordion-item {
     display: flex;
-    align-items: center;
-}
+    flex-direction: column;
+    box-sizing: border-box;
+    border-radius: 5px;
 
-button.episode {
-    width: 100%;
-    cursor: pointer;
 }
-
-.episode img {
+.accordion-item img {
     margin-right: 8px;
+    margin-left: 4px;
+    width: 13px;
+    height: 13px;
 }
 
-.episode.active {
-    background-color: red;
+.accordion-header {
+    background: rgb(212, 206, 206);
+    color:#333;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    height: 48px;
+    border-radius: 5px;
+
+}
+.accordion-header:hover,
+.active {
     color: #fff;
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 300;
-    line-height: 24px;
+    background-color: red;
+}
+
+.accordion-content {
+    margin-top: -5px;
+    display: none;
+    padding: 10px;
+    background: #f4f4f4;
+    border: none;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 
 }
 
+.active+.accordion-content {
+    display: block;
+}
 
 
+/* release */
 .new-release {
     width: 100%;
     margin-top: 40px;
@@ -680,10 +691,12 @@ button.episode {
     box-sizing: border-box;
     color: #fff;
 }
-.card-input{
+
+.card-input {
     margin-bottom: 7px;
 
 }
+
 .movie-card input {
     margin-top: 5px;
     color: #fff;
@@ -706,14 +719,16 @@ button.episode {
     margin-right: 32px;
 }
 
-.img-container{
+.img-container {
     display: flex;
     justify-content: center;
 }
-.comment-content{
+
+.comment-content {
     margin-top: 5px;
     margin-bottom: -8px;
 }
+
 .comment-content p {
     font-family: Poppins;
     font-size: 16px;
