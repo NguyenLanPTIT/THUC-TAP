@@ -712,6 +712,7 @@ button.episode {
 }
 .comment-content{
     margin-top: 5px;
+    margin-bottom: -8px;
 }
 .comment-content p {
     font-family: Poppins;
@@ -725,7 +726,7 @@ button.episode {
     justify-content: left;
     align-items: end;
     margin-top: -5px;
-    margin-bottom: -8px;
+
 }
 
 .like {
