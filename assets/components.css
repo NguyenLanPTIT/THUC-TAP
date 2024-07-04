@@ -158,6 +158,8 @@ body::-webkit-scrollbar {
     position: relative;
     width: 100%;
     z-index: 1;
+    margin-top: 102px;
+    padding: 0 160px;
 }
 
 .controls {
@@ -168,7 +170,7 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 760px;
+    top: 668px;
     z-index: 2;
 }
 
@@ -179,8 +181,8 @@ body::-webkit-scrollbar {
 
 .room-icon {
     position: absolute;
-    top: -400px;
-    left: 1370px;
+    top: -300px;
+    left: 1214px;
 
 }
 
@@ -492,6 +494,7 @@ body::-webkit-scrollbar {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+    border: none;
 }
 
 .episode {
@@ -504,7 +507,9 @@ body::-webkit-scrollbar {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-
+    border: none;
+    display: flex;
+    align-items: center;
 }
 
 button.episode {
@@ -514,7 +519,6 @@ button.episode {
 
 .episode img {
     margin-right: 8px;
-    margin-top: 8px;
 }
 
 .episode.active {
@@ -675,36 +679,52 @@ button.episode {
     box-sizing: border-box;
     color: #fff;
 }
+.card-input{
+    margin-bottom: 7px;
 
+}
 .movie-card input {
-    margin-top: 10px;
+    margin-top: 5px;
     color: #fff;
     width: 816px;
     height: 72px;
     border-radius: 10px;
+    border: none;
     padding: 20px;
     font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
+    display: flex;
+    justify-content: center;
+
 }
 
 .movie-card img {
     margin-right: 32px;
 }
 
+.img-container{
+    display: flex;
+    justify-content: center;
+}
+.comment-content{
+    margin-top: 5px;
+}
 .comment-content p {
     font-family: Poppins;
     font-size: 16px;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 30px;
 }
 
 .react {
     display: flex;
     justify-content: left;
     align-items: end;
+    margin-top: -5px;
+    margin-bottom: -8px;
 }
 
 .like {
