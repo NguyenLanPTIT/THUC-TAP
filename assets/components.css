@@ -464,7 +464,7 @@ body::-webkit-scrollbar {
     justify-content: left;
     align-items: center;
     text-align: center;
-    margin-bottom: 34px;
+    margin-bottom: 10px;
 }
 
 .season-heading p {
@@ -500,9 +500,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     box-sizing: border-box;
     grid-column: span 1;
-    padding-bottom: 24px;
-
-
+    padding-top: 24px;
 
 }
 
@@ -532,14 +530,27 @@ body::-webkit-scrollbar {
     background: #f4f4f4;
     border: none;
     overflow: hidden;
-    transition: max-height 0.5s ease;
+    transition: max-height 0.3s ease;
     background-color: #f9f9f9;
-    padding:0 10px;
+    /* padding: 0 10px; */
+
 }
+
+.accordion-content p {
+    margin: 12px;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+
+}
+
 .accordion-header:hover {
     color: #fff;
     background-color: red;
 }
+
 .accordion-content.open {
     max-height: 500px;
 
