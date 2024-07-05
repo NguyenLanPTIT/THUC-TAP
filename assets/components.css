@@ -35,9 +35,9 @@ body::-webkit-scrollbar {
     justify-content: center;
     align-items: center;
     width: 1440px;
-    height: 144px;
+    height: 102px;
     padding-top: 24px;
-    padding-bottom: 72px;
+    padding-bottom: 30px;
     z-index: 5;
 }
 
@@ -157,20 +157,21 @@ body::-webkit-scrollbar {
 .video img {
     position: relative;
     width: 100%;
-    z-index: 1;
-    margin-top: 102px;
-    padding: 0 160px;
+    z-index: 2;
+    top: 102px;
+    padding: 42px 160px 0 160px;
+    height: 712px;
 }
 
 .controls {
     position: absolute;
     bottom: 20px;
     width: 1440px;
-    height: 100px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    top: 668px;
+    top: 720px;
     z-index: 2;
 }
 
@@ -260,13 +261,14 @@ body::-webkit-scrollbar {
 /* container */
 
 .container {
+    /* top: 1000px; */
     width: 1440px;
     padding: 80px 160px;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 .movie-info {
-
+    margin-top: 80px;
     display: flex;
     align-items: center;
     background-color: #000;
@@ -502,9 +504,10 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
-    border-radius: 5px;
-
+    grid-column: span 1;
+    padding-bottom: 24px;
 }
+
 .accordion-item img {
     margin-right: 8px;
     margin-left: 4px;
@@ -514,14 +517,17 @@ body::-webkit-scrollbar {
 
 .accordion-header {
     background: rgb(223, 218, 218);
-    color:#333;
+    color: #333;
     padding: 10px;
     cursor: pointer;
     border: none;
-    height: 48px;
+    height: 58px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
     border-radius: 5px;
-
 }
+
 .accordion-header:hover,
 .active {
     color: #fff;
@@ -530,12 +536,16 @@ body::-webkit-scrollbar {
 
 .accordion-content {
     margin-top: -5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     display: none;
     padding: 10px;
     background: #f4f4f4;
     border: none;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    animation: dropdown 1s ease-in-out forwards;
+    
 
 }
 
@@ -543,6 +553,17 @@ body::-webkit-scrollbar {
     display: block;
 }
 
+@keyframes dropdown {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+
+    to {
+        max-height: 500px;
+        opacity: 1;
+    }
+}
 
 /* release */
 .new-release {
@@ -712,7 +733,12 @@ body::-webkit-scrollbar {
     text-align: left;
     display: flex;
     justify-content: center;
+    outline: none;
 
+}
+
+.movie-card input:focus {
+    color: #333;
 }
 
 .movie-card img {
