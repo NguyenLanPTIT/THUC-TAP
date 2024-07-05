@@ -9,6 +9,7 @@ body {
     background-color: #000;
     display: flex;
     justify-content: center;
+    /* transform: all 0.5s ease; */
 }
 
 .Web {
@@ -146,13 +147,6 @@ body::-webkit-scrollbar {
 
 
 /* slider */
-
-/* .video-container {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-} */
 
 .video img {
     position: relative;
@@ -461,6 +455,7 @@ body::-webkit-scrollbar {
     width: 100%;
     padding-top: 40px;
 
+
 }
 
 .season-heading {
@@ -508,6 +503,7 @@ body::-webkit-scrollbar {
     padding-bottom: 24px;
 
 
+
 }
 
 .accordion-item img {
@@ -519,61 +515,42 @@ body::-webkit-scrollbar {
 }
 
 .accordion-header {
-    background: rgb(223, 218, 218);
-    color: #333;
-    padding: 10px;
-    cursor: pointer;
-    border: none;
-    height: 58px;
-    box-sizing: border-box;
     display: flex;
     align-items: center;
+    height: 58px;
+    padding: 10px;
+    background: rgb(223, 218, 218);
+    color: #333;
+    cursor: pointer;
     border-radius: 5px;
-    transition: border-radius 0.1s ease;
-
-}
-
-.accordion-header:hover,
-.active {
-    color: #fff;
-    background-color: red;
 }
 
 .accordion-content {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    display: none;
-    padding: 10px;
+    max-height: 0;
     background: #f4f4f4;
     border: none;
-    box-sizing: border-box;
     overflow: hidden;
-
-
-    animation: dropdown 0.5s ease-in-out forwards;
-
+    transition: max-height 0.5s ease;
+    background-color: #f9f9f9;
+    padding:0 10px;
 }
-
-.active+.accordion-content {
-    display: block;
+.accordion-header:hover {
+    color: #fff;
+    background-color: red;
 }
+.accordion-content.open {
+    max-height: 500px;
 
-@keyframes dropdown {
-    from {
-        transform: scaleY(0);
-        opacity: 0;
-    }
-
-    to {
-        transform: scaleY(1);
-        opacity: 1;
-    }
 }
 
 /* release */
 .new-release {
     width: 100%;
     margin-top: 40px;
+
+
 }
 
 .release-body {
