@@ -1,6 +1,6 @@
 // video
 const seekBar = document.getElementById('seekBar');
-seekBar.addEventListener('input', function() {
+seekBar.addEventListener('input', function () {
     this.style.background = `linear-gradient(to right, #fff 0%, #fff ${this.value}%, #b7b2b2 ${this.value}%, #b7b2b2 100%)`;
 });
 
@@ -41,14 +41,14 @@ for (var i = 0; i < headers.length; i++) {
 }
 
 // comments
-document.getElementById('submit-comment').addEventListener('click', function() {
+document.getElementById('submit-comment').addEventListener('click', function () {
     const input = document.getElementById('comment-input');
     const comment = input.value.trim();
 
     if (comment) {
         const commentsContainer = document.querySelector('.scroll-container');
         const newComment = document.createElement('div');
-        newComment.classList.add('movie-card'); 
+        newComment.classList.add('movie-card');
         newComment.innerHTML = `
          <div class=" movie-card ">
                         <a class="img-container">
@@ -73,8 +73,8 @@ document.getElementById('submit-comment').addEventListener('click', function() {
         } else {
             commentsContainer.appendChild(newComment);
         }
-        input.value = ''; 
+        input.value = '';
     } else {
-        alert('Please enter a comment.'); 
+        alert('Please enter a comment.');
     }
 });
