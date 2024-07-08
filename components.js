@@ -1,12 +1,8 @@
 // video
 const seekBar = document.getElementById('seekBar');
 seekBar.addEventListener('input', function() {
-    const percentage = (this.value - this.min) / (this.max - this.min) * 100;
-    this.style.background = `linear-gradient(to right, #ddd 0%, #ddd ${percentage}%, #b7b2b2 ${percentage}%, #b7b2b2 100%)`;
+    this.style.background = `linear-gradient(to right, #fff 0%, #fff ${this.value}%, #b7b2b2 ${this.value}%, #b7b2b2 100%)`;
 });
-
-
-
 
 function pad(value) {
     return value < 10 ? '0' + value : value;
