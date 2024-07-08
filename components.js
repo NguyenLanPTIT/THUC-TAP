@@ -39,3 +39,42 @@ for (var i = 0; i < headers.length; i++) {
         }
     });
 }
+
+// comments
+document.getElementById('submit-comment').addEventListener('click', function() {
+    const input = document.getElementById('comment-input');
+    const comment = input.value.trim();
+
+    if (comment) {
+        const commentsContainer = document.querySelector('.scroll-container');
+        const newComment = document.createElement('div');
+        newComment.classList.add('movie-card'); 
+        newComment.innerHTML = `
+         <div class=" movie-card ">
+                        <a class="img-container">
+                            <img src="./assets/images/Comment1.png" alt="James">
+                            <div class="img-overlay"></div>
+                        </a>
+                        <div class="comment-content">
+                            <p>Arlene<br>08/07/2024<br>${comment}</p>
+                            <div class="react">
+                                <div class="like">
+                                    <img src="./assets/images/like.svg" alt="">
+                                    <p>1</p>
+                                </div>
+                                <img src="./assets/images/dislike.svg" alt="">
+                                <p>Reply</p>
+                            </div>
+                        </div>
+                    </div>
+        `;
+        if (commentsContainer.firstChild) {
+            commentsContainer.insertBefore(newComment, commentsContainer.firstChild);
+        } else {
+            commentsContainer.appendChild(newComment);
+        }
+        input.value = ''; 
+    } else {
+        alert('Please enter a comment.'); 
+    }
+});
