@@ -171,32 +171,34 @@ body::-webkit-scrollbar {
 #seekBar {
     position: absolute;
     width: 928px;
-    height:16px ;
+    height:10px ;
     flex-grow: 1;
     margin: 0 10px;
-    -webkit-appearance: none;
+    appearance: none;
     border-radius: 10px;
+    transition: background 0.3s ease;
 }
 
 #seekBar::-webkit-slider-thumb {
-    -webkit-appearance: none;
+    appearance: none;
     width: 32px;
     height: 32px;
     background: #ddd;
     cursor: pointer;
+    border: 6px solid #fff;
     border-radius: 50%;
 }
 
 #seekBar::-moz-range-thumb {
-    width: 16px;
-    height: 16px;
+    width: 10px;
+    height: 10px;
     background: #ddd;
     cursor: pointer;
 }
 
 #seekBar::-ms-thumb {
-    width: 16px;
-    height: 216px;
+    width: 10px;
+    height: 10px;
     background: #ddd;
     cursor: pointer;
 }
