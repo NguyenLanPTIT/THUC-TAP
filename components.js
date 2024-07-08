@@ -1,7 +1,21 @@
+// video
+const seekBar = document.getElementById('seekBar');
+seekBar.addEventListener('input', function() {
+    const percentage = (this.value - this.min) / (this.max - this.min) * 100;
+    this.style.background = `linear-gradient(to right, #ddd 0%, #ddd ${percentage}%, #b7b2b2 ${percentage}%, #b7b2b2 100%)`;
+});
+
+
+
+
+function pad(value) {
+    return value < 10 ? '0' + value : value;
+}
+// season
 
 var headers = document.getElementsByClassName("accordion-header");
 for (var i = 0; i < headers.length; i++) {
-    headers[i].addEventListener('click', function () {
+    headers[i].addEventListener('click', function (header) {
         var isActive = this.classList.contains("active");
         var content = this.nextElementSibling;
         var icon = this.querySelector('.toggle-icon');
