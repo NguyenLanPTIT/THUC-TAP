@@ -11,19 +11,21 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./assets/responsive.css">
 </head>
 
 <body>
     <div class="Web">
-        <div id="navbar" class="navbar">
-            <ul class="nav-menu ">
+        <div id="navbar" class="navbar ">
+            <button class="hamburger" id="hamburger-icon">&#9776;</button>
+            <ul class="nav-menu  ">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#">Genre</a></li>
                 <li><a href="#">Country</a></li>
             </ul>
-            <div class="search-container mar-8 pad-8 ">
+            <div class="search-container  mar-8 pad-8 ">
                 <input type="text" placeholder="Search movies..." id="search-input">
-                <div id="search-button">
+                <div id="search-button ">
                     <img src="./assets/images/search.svg" alt="">
                 </div>
             </div>
@@ -32,12 +34,13 @@
                 <li><a href="#Series">Series</a></li>
                 <li><a href="#Animation">Animation</a></li>
             </ul>
-            <div class="register pad-8">
+            <div class="register  pad-8">
                 <a href="#">Login/Signup</a>
                 <img class="bell-button " src="./assets/images/thongbao.svg" alt="">
             </div>
         </div>
-        <div id="nav-overlay" class="nav-overlay"></div>
+        <div id="nav-overlay" class="nav-overlay "></div>
+
         <!-- slider -->
         <div class="slider-control">
             <div class="buttons">
@@ -67,7 +70,9 @@
         </div>
         <div class="slider ">
             <div class="slider-item fade">
-                <img src="./assets/images/avatar-way-of-water.jpg" alt="Avata">
+                <div class="slider-img">
+                    <img src="./assets/images/avatar-way-of-water.jpg" alt="Avata">
+                </div>
                 <div class="text-content">
                     <div class="text-heading">
                         <p>Avatar: The Way of Water</p>
@@ -180,7 +185,9 @@
             <div class="slider-item fade">
                 <img src="./assets/images/Fubar .png" alt="Fubar">
                 <div class="text-content">
-                    <h2 class="text-heading">Fubar</h2>
+                    <div class="text-heading">
+                        <p>Fubar</p>
+                    </div>
                     <div class="content-slider">
                         <div class="btn-tags">
                             <span class="tag">Action</span>
@@ -266,56 +273,56 @@
                     </button>
 
                     <div class=" scroll-container">
-                        <div class=" col-4 s-col-full  movie-card ">
+                        <div class=" movie-card ">
                             <a href="./components.html" class="img-container">
                                 <img src="./assets/images/recently/the_flash.jpg" alt="The Flash">
                                 <div class="img-overlay"></div>
                             </a>
                             <p>The Flash<br>Series 2 / EP 9<br>11/05/23</p>
                         </div>
-                        <div class=" col-4 s-col-full  movie-card ">
+                        <div class=" movie-card ">
                             <a href="./components.html" class="img-container">
                                 <img src="./assets/images/recently/fubar.jpg" alt="Fubar">
                                 <div class="img-overlay"></div>
                             </a>
                             <p>Fubar<br>Series 1 / EP 8<br>11/05/23</p>
                         </div>
-                        <div class=" col-4 s-col-full  movie-card ">
+                        <div class=" movie-card ">
                             <a href="./components.html" class="img-container">
                                 <img src="./assets/images/recently/manifest.jpg" alt="Manifest">
                                 <div class="img-overlay"></div>
                             </a>
                             <p>Manifest<br>Series 4 / EP 12<br>11/05/23</p>
                         </div>
-                        <div class="col-4 s-col-full  movie-card ">
+                        <div class="movie-card ">
                             <a href="./components.html" class="img-container">
                                 <img src="./assets/images/recently/silo.jpg" alt="Silo">
                                 <div class="img-overlay"></div>
                             </a>
                             <p>Silo<br>Series 1 / EP 10<br>11/05/23</p>
                         </div>
-                        <div class=" col-4 s-col-full  movie-card ">
+                        <div class=" movie-card ">
                             <a href="./components.html" class="img-container">
                                 <img src="./assets/images/recently/the_flash.jpg" alt="The Flash">
                                 <div class="img-overlay"></div>
                             </a>
                             <p>The Flash<br>Series 2 / EP 9<br>11/05/23</p>
                         </div>
-                        <div class=" col-4 s-col-full  movie-card ">
+                        <div class=" movie-card ">
                             <a href="./components.html" class="img-container">
                                 <img src="./assets/images/recently/fubar.jpg" alt="Fubar">
                                 <div class="img-overlay"></div>
                             </a>
                             <p>Fubar<br>Series 1 / EP 8<br>11/05/23</p>
                         </div>
-                        <div class=" col-4 s-col-full  movie-card ">
+                        <div class=" movie-card ">
                             <a href="./components.html" class="img-container">
                                 <img src="./assets/images/recently/manifest.jpg" alt="Manifest">
                                 <div class="img-overlay"></div>
                             </a>
                             <p>Manifest<br>Series 4 / EP 12<br>11/05/23</p>
                         </div>
-                        <div class="col-4 s-col-full  movie-card ">
+                        <div class="movie-card ">
                             <a href="./components.html" class="img-container">
                                 <img src="./assets/images/recently/silo.jpg" alt="Silo">
                                 <div class="img-overlay"></div>
@@ -331,17 +338,17 @@
                 </div>
             </div>
             <!-- Trending -->
-            <div class="trending-container">
+            <div class="trending-container ">
                 <div class="header-trending">
                     <h2>Trending</h2>
                     <a href="#">View all
                         <img src="./assets/images/Vector (1).png" alt="">
                     </a>
                 </div>
-                <div class="trending-content ">
-                    <div class="item-trending ">
+                <div class="trending-content  ">
+                    <div class="item-trending  ">
                         <a href="./components.html" class="img-container">
-                            <img src="./assets/images/trending/Medellin.jpg" alt="Medellin">
+                            <img class="trending-img" src="./assets/images/trending/Medellin.jpg" alt="Medellin">
                             <div class="img-overlay"></div>
                         </a>
                         <div class="play-icon">
@@ -356,17 +363,17 @@
                             <img src="./assets/images/start.png" alt="">
                             <p>8.0</p>
                         </div>
-                        <div class="item-content">
-                            <p>Medellin</p>
-                            <div class="tags">
-                                <div class="tag-trend">Action</div>
+                        <div class="item-content  ">
+                            <p> Medellin</p>
+                            <div class="tags ">
+                                <div class="tag-trend ">Action</div>
                                 <div class="tag-trend ">Comedy</div>
                             </div>
                         </div>
                     </div>
-                    <div class="item-trending">
+                    <div class="item-trending ">
                         <a href="./components.html" class="img-container">
-                            <img src="./assets/images/trending/Fast_X.jpg" alt="Fast X">
+                            <img class="trending-img" src="./assets/images/trending/Fast_X.jpg" alt="Fast X">
                             <div class="img-overlay"></div>
                         </a>
                         <div class="play-icon">
@@ -389,9 +396,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item-trending ">
+                    <div class="item-trending  ">
                         <a href="./components.html" class="img-container">
-                            <img src="./assets/images/trending/The_Black_Demon.jpg" alt="The Black Demon">
+                            <img class="trending-img" src="./assets/images/trending/The_Black_Demon.jpg"
+                                alt="The Black Demon">
                             <div class="img-overlay"></div>
                         </a>
                         <div class="play-icon ">
@@ -418,15 +426,15 @@
                 </div>
             </div>
             <!-- new release-movie -->
-            <div id="Movies" class="new-release">
+            <div id="Movies" class="new-release ">
                 <div class="header-release">
                     <h2>New Release-Movies</h2>
                     <a href="#">View all
                         <img src="./assets/images/Vector (1).png" alt="">
                     </a>
                 </div>
-                <div class="release-content">
-                    <div class="item-release">
+                <div class="release-content ">
+                    <div class="item-release ">
                         <a href="./components.html" class="img-container">
                             <img src="./assets/images/new-release/Ghosted.jpg" alt="Ghosted">
                             <div class="img-overlay"></div>
@@ -444,11 +452,12 @@
 
                     </div>
 
-                    <div class="item-release">
+                    <div class="item-release ">
                         <a href="./components.html" class="img-container">
                             <img src="./assets/images/new-release/Join.jpg" alt="John Wick: Ch...">
                             <div class="img-overlay"></div>
                         </a>
+
                         <div class="content-release">
                             <p>John Wick: Chapter 4</p>
                             <div class="tags">
@@ -460,7 +469,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item-release">
+                    <div class="item-release ">
                         <a href="./components.html" class="img-container">
                             <img src="./assets/images/new-release/Guardians.jpg" alt="Guardians of th..">
                             <div class="img-overlay"></div>
@@ -476,7 +485,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item-release">
+                    <div class="item-release ">
                         <a href="./components.html" class="img-container">
                             <img src="./assets/images/new-release/The Conven.jpg" alt="The Conven...">
                             <div class="img-overlay"></div>
@@ -502,8 +511,8 @@
                         <img src="./assets/images/Vector (1).png" alt="">
                     </a>
                 </div>
-                <div class="release-content">
-                    <div class="item-release">
+                <div class="release-content ">
+                    <div class="item-release ">
                         <a href="./components.html" class="img-container">
                             <img src="./assets/images/release-series/Silo.jpg" alt="Ghosted">
                             <div class="img-overlay"></div>
@@ -523,7 +532,7 @@
 
                     </div>
 
-                    <div class="item-release">
+                    <div class="item-release ">
                         <a href="./components.html" class="img-container">
                             <img src="./assets/images//release-series/Black Knight.jpg" alt="John Wick: Ch...">
                             <div class="img-overlay"></div>
@@ -542,7 +551,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item-release">
+                    <div class="item-release ">
                         <a href="./components.html" class="img-container">
                             <img src="./assets/images/release-series/Drops of God.jpg" alt="Guardians of th..">
                             <div class="img-overlay"></div>
@@ -561,7 +570,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="item-release">
+                    <div class="item-release ">
                         <a href="./components.html" class="img-container">
                             <img src="./assets/images/release-series/the-night-agent.jpg" alt="The Conven...">
                             <div class="img-overlay"></div>
@@ -597,10 +606,10 @@
                 </div>
 
                 <div class="recommend-body">
-                    <div class="recommend-content ">
-                        <div class="item-recommend">
+                    <div class="recommend-content  ">
+                        <div class="item-recommend  ">
                             <a href="./components.html" class="img-container">
-                                <img src="./assets/images/recomend/robots.jpg" alt="Ghosted">
+                                <img class="recommend-img" src="./assets/images/recomend/robots.jpg" alt="Ghosted">
                                 <div class="img-overlay"></div>
                             </a>
                             <div class="content-recommend">
@@ -616,9 +625,10 @@
 
                         </div>
 
-                        <div class="item-recommend">
+                        <div class="item-recommend  ">
                             <a href="./components.html" class="img-container">
-                                <img src="./assets/images/recomend/Love Again.jpg" alt="John Wick: Ch...">
+                                <img class="recommend-img" src="./assets/images/recomend/Love Again.jpg"
+                                    alt="John Wick: Ch...">
                                 <div class="img-overlay"></div>
                             </a>
                             <div class="content-recommend">
@@ -632,9 +642,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item-recommend">
+                        <div class="item-recommend ">
                             <a href="./components.html" class="img-container">
-                                <img src="./assets/images/recomend/hypnotic.jpg" alt="Guardians of th..">
+                                <img class="recommend-img" src="./assets/images/recomend/hypnotic.jpg"
+                                    alt="Guardians of th..">
                                 <div class="img-overlay">
 
                                 </div>
@@ -650,9 +661,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item-recommend">
+                        <div class="item-recommend ">
                             <a href="./components.html" class="img-container">
-                                <img src="./assets/images/recomend/Paint.jpg" alt="The Conven...">
+                                <img class="recommend-img" src="./assets/images/recomend/Paint.jpg" alt="The Conven...">
                                 <div class="img-overlay"></div>
                             </a>
                             <div class="content-recommend">
@@ -666,16 +677,14 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="recommend-content">
-                        <div class="item-recommend">
+                        <div class="item-recommend ">
                             <a href="./components.html" class="img-container">
-                                <img src="./assets/images/recomend/Book Club.jpg" alt="Ghosted">
+                                <img class="recommend-img" src="./assets/images/recomend/Book Club.jpg" alt="Ghosted">
                                 <div class="img-overlay"></div>
                             </a>
                             <div class="content-recommend">
                                 <p>Book Club</p>
-                                <div class="tags">
+                                <div class="tags ">
                                     <div class="tag-trend">CAM</div>
                                     <div class="tag-trend tagg">
                                         <img src="./assets/images/Vector.svg" alt="">
@@ -686,9 +695,10 @@
 
                         </div>
 
-                        <div class="item-recommend">
+                        <div class="item-recommend ">
                             <a href="./components.html" class="img-container">
-                                <img src="./assets/images/recomend/The Mother.jpg" alt="John Wick: Ch...">
+                                <img class="recommend-img" src="./assets/images/recomend/The Mother.jpg"
+                                    alt="John Wick: Ch...">
                                 <div class="img-overlay"></div>
                             </a>
                             <div class="content-recommend">
@@ -702,9 +712,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item-recommend">
+                        <div class="item-recommend ">
                             <a href="./components.html" class="img-container">
-                                <img src="./assets/images/recomend/January 6th.jpg" alt="Guardians of th..">
+                                <img class="recommend-img" src="./assets/images/recomend/January 6th.jpg"
+                                    alt="Guardians of th..">
                                 <div class="img-overlay"></div>
                             </a>
                             <div class="content-recommend">
@@ -718,9 +729,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="item-recommend">
+                        <div class="item-recommend ">
                             <a href="./components.html" class="img-container">
-                                <img src="./assets/images/recomend/Sisu.jpg" alt="The Conven...">
+                                <img class="recommend-img" class="recommend-img" src="./assets/images/recomend/Sisu.jpg"
+                                    alt="The Conven...">
                                 <div class="img-overlay"></div>
                             </a>
                             <div class="content-recommend">
@@ -735,6 +747,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
 
             </div>
