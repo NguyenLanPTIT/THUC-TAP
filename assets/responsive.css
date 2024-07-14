@@ -606,7 +606,7 @@ html {
 }
 
 /*Tablet*/
-@media (min-width:740px)and (max-width:1095px) {
+@media (min-width:740px)and (max-width:1094px) {
 
     .new-release,
     .trending-container,
@@ -656,6 +656,7 @@ html {
     .item-trending:hover {
         transform: scale(1.05);
     }
+
     .recommend-img,
     .trending-img {
         display: block;
@@ -898,8 +899,10 @@ html {
     }
 
 
-    .release-content {
-        flex-direction: column;
+    .release-content,
+    .release-content,
+    .recommend-content  {
+        flex-wrap: wrap;
     }
 
     .movie-card {
@@ -932,38 +935,30 @@ html {
         height: 15px !important;
     }
 
-    .trending-container {
-        margin-top: 20px;
-    }
-    .new-release,
-    .recommend-container {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        margin: 0;
-    }
+    
+
     .item-release,
     .item-recommend,
     .item-trending {
-        width: 100%;
         flex-basis: 100%;
-        height: auto;
         margin-bottom: 20px;
-        overflow: hidden;
     }
+
     .item-release:hover,
     .item-recommend:hover,
     .item-trending:hover {
         transform: scale(1.05);
     }
+
     .recommend-img,
-    .trending-img {
+    .trending-img,
+    .item-release a img {
         width: 100%;
-        height: 100%;
         object-fit: cover;
+        display: block;
     }
 
-    
+
     .header-trending,
     .header-release,
     .header-recommend {
@@ -971,6 +966,7 @@ html {
         justify-content: space-between;
         align-items: center;
     }
+
     .header-recommend .tag-trend {
         display: none;
     }
@@ -1009,17 +1005,18 @@ html {
         height: 24px;
 
     }
+
     .tag-trend {
         border-radius: 10px;
         padding: 4px;
         font-size: 12px;
         font-weight: 400;
         height: 30px;
-      }
-      
-      .tagg {
+    }
+
+    .tagg {
         margin-left: 6px;
-      }
+    }
 
 
 }
