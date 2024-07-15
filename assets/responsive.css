@@ -7,7 +7,7 @@ html {
 
 /* nên sử dụng đơn vị em trên media query */
 /*PC*/
-@media (min-width:1360px) and (max-width:1600px) {
+@media (min-width:1360px) and (max-width:1650px) {
     .nenmodal .nenmodal2 {
         position: fixed;
         margin-top: -204px;
@@ -39,6 +39,19 @@ html {
 
     }
 
+    .watch-now,
+    .watch-later {
+
+        padding: 10px;
+        cursor: pointer;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        height: 76px;
+
+        margin: 0 20px;
+    }
+
     .container {
         position: relative;
         width: 100%;
@@ -54,15 +67,6 @@ html {
         width: 100%;
     }
 
-    .watch-now,
-    .watch-later {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 24px;
-        height: 60px;
-        margin: 0 10px;
-        padding: 10px;
-    }
 
     .content-slider {
         display: flex;
@@ -148,7 +152,7 @@ html {
     }
 
     .navbar {
-        position: relative;
+        position: fixed;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -176,10 +180,12 @@ html {
 
     .navbar>ul {
         position: absolute;
-        left: 11%;
+        left: 14%;
         top: 60px;
         flex-wrap: wrap;
-        border-radius: 10px;
+
+        position: fixed;
+        width: 10%;
     }
 
     .nav-menu {
@@ -188,6 +194,7 @@ html {
         position: absolute;
         z-index: 1000;
         background-color: #000;
+        
     }
 
     .smail {
@@ -214,6 +221,7 @@ html {
     }
 
     .hamburger {
+        position: relative;
         display: block;
         float: right;
         padding: 0 21px;
@@ -350,7 +358,7 @@ html {
 
     .nenmodal .nenmodal2 {
         position: fixed;
-        margin-top: -204px;
+        margin-top: -102px;
         /* display: none; */
     }
 
@@ -395,7 +403,7 @@ html {
 }
 
 /*Tablet*/
-@media (min-width:701px)and (max-width: 1600px) {
+@media (min-width:701px)and (max-width: 1700px) {
     .item-content {
         margin-top: 4px;
     }
@@ -430,7 +438,7 @@ html {
         flex-grow: 0;
         flex-shrink: 1;
         transition: transform 0.3s ease-in-out;
-        flex-basis: 21%;
+        flex-basis: 23%;
         justify-content: space-between;
 
 
@@ -466,6 +474,10 @@ html {
         display: block;
 
     }
+    .nenmodal .ndmodal {
+        position: absolute;
+        padding: 20px;
+    }
 
 
 }
@@ -474,7 +486,7 @@ html {
 /* Trending */
 /* New release-movie */
 
-@media (min-width: 851px) and (max-width: 1300px) {
+@media (min-width: 850px) and (max-width: 1360px) {
     .movie-card {
         min-width: 28%;
         padding-right: 20px;
@@ -484,23 +496,42 @@ html {
         width: 50px;
         height: 78px;
     }
-
-
-    .item-trending {
-        flex-basis: 48%;
-    }
-
-
     .item-release,
     .item-recommend {
-        flex-basis: 30%;
+        flex-basis: 30.5%;
         justify-content: center;
 
     }
+    .item-trending {
+        flex-basis: 48%;
+    }
+    .nenmodal .ndmodal {
+        position: absolute;
+        margin-top: 100px;
+        width: 400px;
+        padding: 20px;
+    }
 
-    .release-content,
-    .recommend-content {
+    @media (min-width: 1045px) and (max-width: 1360px) {
+
+        .item-release,
+        .item-recommend {
+            flex-basis: 22%;
+            justify-content: center;
+
+        }
+        .item-trending {
+            flex-basis: 31%;
+        }
+    }
+
+
+    .release-content {
         justify-content: space-between;
+    }
+
+    .recommend-content {
+        justify-content: space-around;
     }
 
     .trending-content {
@@ -517,10 +548,125 @@ html {
         display: block;
 
     }
+    @media (min-width: 850px) and (max-width:950px) {
+        .navbar>ul {
+            left: 12%;    
+            width: 12%;
+            
+        }
+        .slider-control {
+            position: absolute;
+            z-index: 10;
+            top: 13%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+        }
+    
+        .watch-now,
+        .watch-later {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 16px;
+            height: 50px;
+            margin: 0 10px;
+            padding: 10px;
+        }
+    
+        .buttons {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 1000;
+            top: 13%;
+    
+        }
+    
+        .buttons img {
+            width: 15px;
+            height: 15px;
+        }
+        .text-content {
+            width: 100%;
+            position: absolute;
+            top: 78%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: left;
+            z-index: 2;
+            padding: 0 100px;
+            margin: 0;
+    
+        }
+    }
 
 }
 
-@media (min-width: 701px) and (max-width:850px) {
+@media (min-width: 700px) and (max-width:850px) {
+    .nenmodal .ndmodal {
+        position: absolute;
+        margin-top: 120px;
+        width: 400px;
+        padding: 20px;
+    }
+    .navbar>ul {
+        left: 9%;    
+        width: 14%;
+        
+    }
+    .slider-control {
+        position: absolute;
+        z-index: 10;
+        top: 11%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+    }
+
+    .watch-now,
+    .watch-later {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+        height: 40px;
+        margin: 0 10px;
+        padding: 10px;
+    }
+
+    .buttons {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        z-index: 1000;
+        top: 11%;
+
+    }
+
+    .buttons img {
+        width: 15px;
+        height: 15px;
+    }
+    .text-content {
+        width: 100%;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-align: left;
+        z-index: 2;
+        padding: 0 100px;
+        margin: 0;
+
+    }
+
 
     .item-release,
     .item-recommend,
@@ -579,6 +725,12 @@ html {
 /*Mobile*/
 
 @media (max-width:700px) {
+    .navbar>ul {
+        left: 4%;    
+        width: 20%;
+        font-size: 10px;
+        
+    }
     .container {
         position: relative;
         width: 100%;
@@ -621,7 +773,7 @@ html {
     }
 
     .slider-control {
-        top: 10%;
+        top: 9%;
     }
 
     .watch-now,
@@ -652,7 +804,7 @@ html {
         overflow: hidden;
         position: absolute;
         text-align: left;
-        top: 60%;
+        top: 70%;
         padding: 0 60px;
         margin: 0;
         height: auto;
@@ -691,9 +843,24 @@ html {
     }
 
     @media (max-width:500px) {
+        .navbar>ul {
+            left: 2%;    
+            width: 25%;
+            font-size: 10px;
+            
+        }
         .tags-icon {
             display: none;
         }
+        .slider-control {
+            display: none;
+            top: 10%;
+        }
+        .btn-tags{
+            display: none;
+        }
+    
+
     }
 
     span {
@@ -721,19 +888,23 @@ html {
 
     .nenmodal .ndmodal {
         position: absolute;
-        margin-top: 80px;
-        width: 200px;
-        padding: 10px;
+        margin-top: 100px;
+        width: 400px;
+        padding: 20px;
     }
 
     .nenmodal .closemodal {
         text-align: center;
         padding-top: 10px;
     }
+    .nenmodal .nenmodal2 {
+        position: fixed;
+        margin-top: -80px;
+    }
 
     iframe {
-        width: 180px;
-        height: 80px;
+        width: 360px;
+        height: 100px;
     }
 
     .titlemodal {
@@ -751,12 +922,10 @@ html {
         height: 30px;
         font-size: 14px;
     }
-    .item-content{
+
+    .item-content {
         height: 50px;
     }
-
-
-
 
     /* .new-release,
     .trending-container,
@@ -871,7 +1040,8 @@ html {
         width: 12px;
         height: 12px;
     }
-/* 
+
+    /* 
     .item-content p {
         font-size: 16px;
         font-weight: 600;
