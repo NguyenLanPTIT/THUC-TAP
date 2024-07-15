@@ -1185,8 +1185,18 @@ html {
     }
 
     @media (max-width:400px) {
+        .item-release,
+        .item-recommend,
+        .item-trending {
+            flex-basis: 80%;
+        }
+        .release-content,
+        .recommend-content,
+        .trending-content {
+            justify-content: center;
+    
+        }
         .slider-control {
-            /* display: none; */
             top: 11%;
         }
         .watch-now,
