@@ -419,10 +419,6 @@ html {
         padding: 5px;
     }
 
-    .item-content {
-        margin-top: 4px;
-    }
-
     .new-release,
     .trending-container,
     .recommend-container {
@@ -529,6 +525,11 @@ html {
         margin-top: 100px;
         width: 400px;
         padding: 20px;
+    }
+    
+    .nenmodal .nenmodal2 {
+        position: fixed;
+        margin-top: -160px;
     }
 
     @media (min-width: 1045px) and (max-width: 1360px) {
@@ -749,7 +750,7 @@ html {
     .release-content,
     .recommend-content,
     .trending-content {
-        justify-content: left;
+        justify-content: space-between;
 
     }
 
@@ -925,29 +926,6 @@ html {
         margin-bottom: 5px;
     }
 
-    @media (max-width:500px) {
-        .slider-control {
-            top: 9%;
-        }
-
-        .navbar>ul {
-            left: 2%;
-            width: 25%;
-            font-size: 10px;
-
-        }
-
-        .tags-icon {
-            display: none;
-        }
-
-        .btn-tags {
-            display: none;
-        }
-
-
-    }
-
     span {
         height: 24px;
         width: auto;
@@ -985,7 +963,7 @@ html {
 
     .nenmodal .nenmodal2 {
         position: fixed;
-        margin-top: -80px;
+        margin-top: -70px;
     }
 
     iframe {
@@ -1014,9 +992,12 @@ html {
     }
 
     .item-content p {
+        padding-top: 4px;
         font-size: 16px;
         font-weight: 500;
         height: 36px;
+
+
     }
 
     .tag-trend {
@@ -1025,6 +1006,9 @@ html {
         font-size: 12px;
         font-weight: 400;
         height: 30px;
+    }
+    .trending-content .tag-trend{
+       margin-left: 6px; 
     }
 
     .tagg {
@@ -1035,13 +1019,7 @@ html {
     }
 
 
-    /* .new-release,
-    .trending-container,
-    .recommend-container {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-    } */
+
 
     .release-content,
     .recommend-content,
@@ -1093,7 +1071,7 @@ html {
     .item-recommend,
     .item-trending {
         flex-basis: 80%;
-        margin-bottom: 20px;
+        height: 80%;
     }
 
     .release-content,
@@ -1161,6 +1139,39 @@ html {
         width: 12px;
         height: 12px;
     }
+    @media (max-width:500px) {
+        .slider-control {
+            top: 9%;
+        }
+
+        .navbar>ul {
+            left: 2%;
+            width: 25%;
+            font-size: 10px;
+
+        }
+
+        .tags-icon {
+            display: none;
+        }
+
+        .btn-tags {
+            display: none;
+        }
+        .nenmodal .ndmodal {
+            position: absolute;
+            margin-top: 100px;
+            width: 300px;
+            padding: 20px;
+        }
+    
+        iframe {
+            width: 260px;
+            height: 100px;
+        }
+
+    
+    }
 
     @media (max-width:400px) {
         .slider-control {
@@ -1204,6 +1215,17 @@ html {
         .slide-btn .icon-right {
             width: 30px !important;
             height: 30px !important;
+        }
+        .nenmodal .ndmodal {
+            position: absolute;
+            margin-top: 90px;
+            width: 220px;
+            padding: 10px;
+        }
+
+        iframe {
+            width: 200px;
+            height: 90px;
         }
     }
 
