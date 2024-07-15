@@ -142,6 +142,7 @@ html {
     }
 
 
+
 }
 
 
@@ -414,6 +415,9 @@ html {
         height: 30px;
         font-size: 16px;
     }
+    #search-input {
+        font-size: 12px;
+    }
 }
 
 /*Tablet*/
@@ -502,6 +506,12 @@ html {
 /* New release-movie */
 
 @media (min-width: 850px) and (max-width: 1360px) {
+    #search-input {
+        font-size: 14px;
+    }
+    .register a{
+        font-size: 16px;
+    }
     .movie-card {
         min-width: 28%;
         padding-right: 20px;
@@ -1164,7 +1174,9 @@ html {
         height: 12px;
     }
     @media (max-width:560px) {
-        .register a,
+        .register a{
+            font-size: 14px;
+        }
         #search-input {
             font-size: 10px;
         }
