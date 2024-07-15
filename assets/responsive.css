@@ -1070,14 +1070,13 @@ html {
     .item-release,
     .item-recommend,
     .item-trending {
-        flex-basis: 80%;
-        height: 80%;
+        flex-basis: 47%;
     }
 
     .release-content,
     .recommend-content,
     .trending-content {
-        justify-content: center;
+        justify-content: space-between;
 
     }
 
@@ -1139,7 +1138,19 @@ html {
         width: 12px;
         height: 12px;
     }
-    @media (max-width:500px) {
+    @media (max-width:560px) {
+        .item-release,
+        .item-recommend,
+        .item-trending {
+            flex-basis: 70%;
+        }
+        .release-content,
+        .recommend-content,
+        .trending-content {
+            justify-content: center;
+    
+        }
+    
         .slider-control {
             top: 9%;
         }
