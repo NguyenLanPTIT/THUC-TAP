@@ -180,6 +180,8 @@ body::-webkit-scrollbar {
   align-items: center;
   justify-content: center;
 }
+
+
 /* slider */
 .slider {
   position: relative;
@@ -1004,7 +1006,6 @@ button:disabled {
   color: rgba(255, 255, 255, 0.5);
   border: 2px solid rgba(255, 0, 0, 0.5);
 }
-
 
 .hamburger {
   display: none;
