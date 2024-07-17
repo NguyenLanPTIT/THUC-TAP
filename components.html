@@ -10,12 +10,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./assets/responsive.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="Web">
         <div id="navbar" class="navbar">
+            <button class="hamburger" id="hamburger-icon">&#9776;</button>
             <ul class="nav-menu ">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#">Genre</a></li>
@@ -41,10 +43,10 @@
         <!-- slider -->
         <div class="video-container ">
             <div class="video" id="video">
-                <img class="slider" src="./assets/images/slider2.png" alt="Avata">
+                <img class="slider1" src="./assets/images/slider2.png" alt="Avata">
             </div>
+            <img class="room-icon" src="./assets/images/room1.svg" alt="">
             <div class="controls">
-                <img class="room-icon" src="./assets/images/room1.svg" alt="">
                 <input type="range" id="seekBar" value="0">
                 <div class="contol-desc">
                     <div class="play">
@@ -68,17 +70,17 @@
         <div class="container">
             <div class="movie-info">
                 <div class="movie-image">
-                    <img src="./assets/images/release-series/Silo.jpg" alt="">
+                    <img class="movie-img" src="./assets/images/release-series/Silo.jpg" alt="">
                 </div>
                 <div class="movie-content">
-                    <div class="text-heading">
+                    <div class="movie-heading">
                         <p>Silo</p>
                         <button class="add">
                             <img src="./assets/images/add.svg" alt="">
                             Add to Favourite
                         </button>
                     </div>
-                    <div class="content-slider">
+                    <div class="content-info">
                         <div class="btn-tags">
                             <span class="tag">Drama</span>
                             <span class="tag">Science Fiction</span>
@@ -99,7 +101,7 @@
                         </div>
 
                     </div>
-                    <div class="text-description">
+                    <div class="movie-description">
                         <p>In a ruined and toxic future, a community exists in a giant underground silo that plunges
                             hundreds of stories deep. There, men and women live in a society full of regulations they
                             believe are meant to protect them.</p>
@@ -109,7 +111,7 @@
                                 States</span></div>
                         <div class="detail-item"><span class="label">Genre :</span><span class="value">Drama, Science
                                 Fiction</span></div>
-                        <div class="detail-item"><span class="label">Date Release :</span><span class="value">May 05
+                        <div class="detail-item"><span class="label">Date film :</span><span class="value">May 05
                                 2023</span></div>
                         <div class="detail-item"><span class="label">Production :</span><span class="value">AMC
                                 Studios</span></div>
@@ -195,155 +197,160 @@
                     </div>
                 </div>
             </div>
-            <div class="new-release">
-                <div class="header-release">
+
+            <div class="recommend-container">
+                <div class="header-film">
                     <h2>You may also like</h2>
                 </div>
-                <div class="release-body"></div>
-                <div class="release-content">
-                    <div class="item-release">
-                        <a class="img-container">
-                            <img src="./assets/images//release-series/Black Knight.jpg" alt="John Wick: Ch...">
-                            <div class="img-overlay"></div>
-                        </a>
+                 <div class="recommend-body">
+                    <div class="recommend-content  ">
+                        <div class="item-recommend  ">
+                            <a href="./components.html" class="img-container">
+                                <img class="recommend-img" src="./assets/images/recomend/robots.jpg" alt="Ghosted">
+                                <div class="img-overlay"></div>
+                            </a>
+                            <div class="content-recommend">
+                                <p>Robots</p>
+                                <div class="tags">
+                                    <div class="tag-trend">CAM</div>
+                                    <div class="tag-trend tagg">
+                                        <img src="./assets/images/Vector.svg" alt="">
+                                        <p>3:12:00</p>
+                                    </div>
+                                </div>
+                            </div>
 
-                        <div class="content-release">
-                            <p>Black Knight</p>
-                            <div class="tags">
-                                <div class="tag-trend">HD</div>
-                                <div class="tag-trend tagg">
+                        </div>
 
-                                    <p>Season 1</p>
+                        <div class="item-recommend  ">
+                            <a href="./components.html" class="img-container">
+                                <img class="recommend-img" src="./assets/images/recomend/Love Again.jpg"
+                                    alt="John Wick: Ch...">
+                                <div class="img-overlay"></div>
+                            </a>
+                            <div class="content-recommend">
+                                <p>Love Again</p>
+                                <div class="tags">
+                                    <div class="tag-trend">CAM</div>
+                                    <div class="tag-trend tagg">
+                                        <img src="./assets/images/Vector.svg" alt="">
+                                        <p>3:12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-recommend ">
+                            <a href="./components.html" class="img-container">
+                                <img class="recommend-img" src="./assets/images/recomend/hypnotic.jpg"
+                                    alt="Guardians of th..">
+                                <div class="img-overlay">
+
+                                </div>
+                            </a>
+                            <div class="content-recommend">
+                                <p>Hypnotic</p>
+                                <div class="tags">
+                                    <div class="tag-trend">CAM</div>
+                                    <div class="tag-trend tagg">
+                                        <img src="./assets/images/Vector.svg" alt="">
+                                        <p>3:12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-recommend ">
+                            <a href="./components.html" class="img-container">
+                                <img class="recommend-img" src="./assets/images/recomend/Paint.jpg" alt="The Conven...">
+                                <div class="img-overlay"></div>
+                            </a>
+                            <div class="content-recommend">
+                                <p>Paint</p>
+                                <div class="tags">
+                                    <div class="tag-trend">CAM</div>
+                                    <div class="tag-trend tagg">
+                                        <img src="./assets/images/Vector.svg" alt="">
+                                        <p>3:12:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-recommend">
+                            <a href="./components.html" >
+                                <img class="recommend-img" src="./assets/images/Nikita.png" alt="Nikita">
+                            </a>
+    
+                            <div class="content-recommend">
+                                <p>Nikita</p>
+                                <div class="tags">
+                                    <div class="tag-trend">HD</div>
+                                    <div class="tag-trend tagg">
+    
+                                        <p>Season 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item-recommend">
+                            <a href="./components.html" >
+                                <img class="recommend-img" src="./assets/images/From.png" alt="From">
+                            </a>
+    
+                            <div class="content-recommend">
+                                <p>From</p>
+                                <div class="tags">
+                                    <div class="tag-trend">HD</div>
+                                    <div class="tag-trend tagg">
+                                        <p>Season 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-recommend ">
+                            <a href="./components.html" class="img-container">
+                                <img class="recommend-img" src="./assets/images/Spy Master.png" alt="Spy/Master">
+                                <div class="img-overlay"></div>
+                            </a>
+                            <div class="content-recommend">
+                                <<p>Spy/Master</p>
+                                <div class="tags">
+                                    <div class="tag-trend">HD</div>
+                                    <div class="tag-trend tagg">
+    
+                                        <p>Season 1</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-recommend ">
+                            <a href="./components.html" class="img-container">
+                                <img class="recommend-img" class="recommend-img" src="./assets/images/Little Bird.png" alt="Little Bird">
+                                <div class="img-overlay"></div>
+                            </a>
+                            <div class="content-recommend">
+                                <<p>Little Bird</p>
+                                <div class="tags">
+                                    <div class="tag-trend">HD</div>
+                                    <div class="tag-trend tagg">
+                                        <p>Season 1</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item-release">
-                        <a href="./components.html" class="img-container">
-                            <img src="./assets/images/release-series/Drops of God.jpg" alt="Guardians of th..">
-                            <div class="img-overlay"></div>
-                        </a>
 
-                        <div class="content-release">
-                            <p>Drops of God</p>
-                            <div class="tags">
-                                <div class="tag-trend">HD</div>
-                                <div class="tag-trend tagg">
-
-                                    <p>Season 1</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-release">
-                        <a href="./components.html" class="img-container">
-                            <img src="./assets/images/Rectangle 13.png" alt="Scoop">
-                            <div class="img-overlay"></div>
-                        </a>
-                        <div class="content-release">
-                            <p>Scoop</p>
-                            <div class="tags">
-                                <div class="tag-trend">HD</div>
-                                <div class="tag-trend tagg">
-
-                                    <p>Season 1</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-release">
-                        <a href="./components.html" class="img-container">
-                            <img src="./assets/images/The Prank Panel.png" alt="The Prank Panel">
-                            <div class="img-overlay"></div>
-                        </a>
-                        <div class="content-release">
-                            <p>The Prank Panel</p>
-                            <div class="tags">
-                                <div class="tag-trend">HD</div>
-                                <div class="tag-trend tagg">
-                                    <p>Season 1</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
                 </div>
 
-                <div class="release-content">
-                    <div class="item-release">
-                        <a href="./components.html" class="img-container">
-                            <img src="./assets/images/Nikita.png" alt="Nikita">
-                            <div class="img-overlay"></div>
-                        </a>
-
-                        <div class="content-release">
-                            <p>Nikita</p>
-                            <div class="tags">
-                                <div class="tag-trend">HD</div>
-                                <div class="tag-trend tagg">
-
-                                    <p>Season 1</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-release">
-                        <a href="./components.html" class="img-container">
-                            <img src="./assets/images/From.png" alt="From">
-                            <div class="img-overlay"></div>
-                        </a>
-
-                        <div class="content-release">
-                            <p>From</p>
-                            <div class="tags">
-                                <div class="tag-trend">HD</div>
-                                <div class="tag-trend tagg">
-                                    <p>Season 1</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-release">
-                        <a href="./components.html" class="img-container">
-                            <img src="./assets/images/Spy Master.png" alt="Spy/Master">
-                            <div class="img-overlay"></div>
-                        </a>
-                        <div class="content-release">
-                            <p>Spy/Master</p>
-                            <div class="tags">
-                                <div class="tag-trend">HD</div>
-                                <div class="tag-trend tagg">
-
-                                    <p>Season 1</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-release">
-                        <a href="./components.html" class="img-container">
-                            <img src="./assets/images/Little Bird.png" alt="Little Bird">
-                            <div class="img-overlay"></div>
-                        </a>
-                        <div class="content-release">
-                            <p>Little Bird</p>
-                            <div class="tags">
-                                <div class="tag-trend">HD</div>
-                                <div class="tag-trend tagg">
-                                    <p>Season 1</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
+
+
             <div class="comment-container">
                 <div class="content-movie">
                     <h2>Comments</h2>
                 </div>
-                <div class=" movie-card ">
-                    <a class="img-container">
-                        <img src="./assets/images/Comment1.png" alt="James">
-                        <div class="img-overlay"></div>
+                <div class=" comment-card ">
+                    
+                        <img class="comment-img" src="./assets/images/Comment1.png" alt="James">
                     </a>
                     <div class="card-input">
                         <p>James<br>
@@ -357,10 +364,9 @@
                     </div>
                 </div>
                 <div class=" scroll-container">  
-                    <div class="  movie-card ">
-                        <a class="img-container">
-                            <img src="./assets/images/Comment2.png" alt="Fubar">
-                            <div class="img-overlay"></div>
+                    <div class="  comment-card ">
+                        
+                            <img class="comment-img"  src="./assets/images/Comment2.png" alt="Fubar">
                         </a>
                         <div class="comment-content">
                             <p>Arlene<br>12/06/2020<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -375,10 +381,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="  movie-card ">
-                        <a class="img-container">
-                            <img src="./assets/images/Comment3.png" alt="Manifest">
-                            <div class="img-overlay"></div>
+                    <div class="  comment-card ">
+                        
+                            <img class="comment-img"  src="./assets/images/Comment3.png" alt="Manifest">
                         </a>
                         <div class="comment-content">
                             <p>Arlene<br>12/06/2020<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco
@@ -394,10 +399,9 @@
                         </div>
 
                     </div>
-                    <div class=" movie-card ">
-                        <a class="img-container">
-                            <img src="./assets/images/Comment4.png" alt="Silo">
-                            <div class="img-overlay"></div>
+                    <div class=" comment-card ">
+                        
+                            <img class="comment-img"src="./assets/images/Comment4.png" alt="Silo">
                         </a>
                         <div class="comment-content">
                             <p>Arlene<br>12/06/2020<br>Ut enim ad minim veniam, quis nostrud exercitation ullamco
