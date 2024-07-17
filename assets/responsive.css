@@ -8,6 +8,7 @@ html {
 /* nên sử dụng đơn vị em trên media query */
 /*PC*/
 @media (min-width:1360px) and (max-width:1650px) {
+
     .slider-item {
         padding-top: 102px;
 
@@ -57,12 +58,6 @@ html {
         margin: 0 20px;
     }
 
-    .container {
-        position: relative;
-        width: 100%;
-        padding: 80px 160px;
-    }
-
     .slider-control {
         position: absolute;
         z-index: 10;
@@ -98,6 +93,7 @@ html {
     }
 
     .item-release .img-release,
+    .item-film .img-release,
     .item-trending .trending-img,
     .item-recommend .recommend-img,
     .img-overlay {
@@ -126,6 +122,7 @@ html {
 
 
     .item-release,
+    .item-film,
     .item-recommend {
         flex-basis: 25%;
         justify-content: center;
@@ -133,6 +130,7 @@ html {
     }
 
     .release-content,
+    .film-content,
     .recommend-content {
         justify-content: space-between;
     }
@@ -150,6 +148,7 @@ html {
 @media (max-width:1360px) {
 
     .slider,
+    .slider1,
     .slider-item {
         width: 100%;
 
@@ -415,6 +414,7 @@ html {
         height: 30px;
         font-size: 16px;
     }
+
     #search-input {
         font-size: 12px;
     }
@@ -427,6 +427,7 @@ html {
     }
 
     .new-release,
+    .new-film,
     .trending-container,
     .recommend-container {
         display: flex;
@@ -435,12 +436,14 @@ html {
     }
 
     .header-release,
+    .header-film,
     .header-recommend,
     .header-trending {
         margin-bottom: 20px;
     }
 
     .release-content,
+    .film-content,
     .recommend-content,
     .trending-content {
         position: relative;
@@ -452,6 +455,7 @@ html {
     }
 
     .item-release,
+    .item-film,
     .item-recommend {
         flex-grow: 0;
         flex-shrink: 1;
@@ -470,12 +474,13 @@ html {
     }
 
     .item-release:hover,
-    .item-recommend:hover,
+    .item-film:hover .item-recommend:hover,
     .item-trending:hover {
         transform: scale(1.05);
     }
 
     .item-release .img-release,
+    .item-film .img-release,
     .item-trending.trending-img,
     .item-recommend .recommend-img {
         position: relative;
@@ -509,9 +514,11 @@ html {
     #search-input {
         font-size: 14px;
     }
-    .register a{
+
+    .register a {
         font-size: 16px;
     }
+
     .movie-card {
         min-width: 28%;
         padding-right: 20px;
@@ -523,6 +530,7 @@ html {
     }
 
     .item-release,
+    .item-film,
     .item-recommend {
         flex-basis: 30.5%;
         justify-content: center;
@@ -539,7 +547,7 @@ html {
         width: 400px;
         padding: 20px;
     }
-    
+
     .nenmodal .nenmodal2 {
         position: fixed;
         margin-top: -160px;
@@ -548,6 +556,7 @@ html {
     @media (min-width: 1045px) and (max-width: 1360px) {
 
         .item-release,
+        .item-film,
         .item-recommend {
             flex-basis: 22%;
             justify-content: center;
@@ -610,7 +619,8 @@ html {
         justify-content: space-between;
     }
 
-    .recommend-content {
+    .recommend-content,
+    .film-content {
         justify-content: space-around;
     }
 
@@ -619,6 +629,7 @@ html {
     }
 
     .item-release .img-release,
+    .item-film .img-release,
     .item-trending .trending-img,
     .item-recommend .recommend-img {
         position: relative;
@@ -695,10 +706,12 @@ html {
         height: 36px;
         margin: 20px;
     }
+
     #search-input {
         font-size: 12px;
         width: 80%;
-      }
+    }
+
     .nenmodal .ndmodal {
         position: absolute;
         margin-top: 120px;
@@ -764,12 +777,14 @@ html {
 
 
     .item-release,
+    .item-film,
     .item-recommend,
     .item-trending {
         flex-basis: 48%;
     }
 
     .release-content,
+    .film-content,
     .recommend-content,
     .trending-content {
         justify-content: space-between;
@@ -820,19 +835,22 @@ html {
 /*Mobile*/
 
 @media (max-width:700px) {
-    .navbar{
+    .navbar {
         justify-content: space-between;
         padding: 0 40px;
     }
+
     .search-container {
         width: 100%;
         height: 36px;
         margin: 20px 0;
     }
+
     #search-input {
         font-size: 12px;
         width: 80%;
-      }
+    }
+
     .hamburger {
         font-size: 24px;
     }
@@ -1042,8 +1060,9 @@ html {
         font-weight: 400;
         height: 30px;
     }
-    .trending-content .tag-trend{
-       margin-left: 6px; 
+
+    .trending-content .tag-trend {
+        margin-left: 6px;
     }
 
     .tagg {
@@ -1103,12 +1122,14 @@ html {
     }
 
     .item-release,
+    .item-film,
     .item-recommend,
     .item-trending {
         flex-basis: 47%;
     }
 
     .release-content,
+    .film-content,
     .recommend-content,
     .trending-content {
         justify-content: space-between;
@@ -1173,30 +1194,39 @@ html {
         width: 12px;
         height: 12px;
     }
-    @media (max-width:560px) {
-        .register a{
+
+    @media (max-width:540px) {
+        .register a {
             font-size: 14px;
         }
+
         #search-input {
             font-size: 10px;
         }
+
         .navbar {
             padding: 0 40px;
         }
+
         .item-release,
-        .item-recommend,
-        .item-trending {
-            flex-basis: 70%;
+        .item-recommend {
+            flex-basis: 60%;
         }
+
+        .item-trending {
+            flex-basis: 80%;
+        }
+
         .release-content,
+        .film-content,
         .recommend-content,
         .trending-content {
             justify-content: center;
-    
+
         }
-    
+
         .slider-control {
-            top: 9%;
+            top: 12%;
         }
 
         .navbar>ul {
@@ -1210,46 +1240,55 @@ html {
             display: none;
         }
 
-        .btn-tags {
-            display: none;
-        }
+
+
         .nenmodal .ndmodal {
             position: absolute;
             margin-top: 100px;
             width: 300px;
             padding: 20px;
         }
-    
+
         iframe {
             width: 260px;
             height: 100px;
         }
 
-    
+
     }
 
-    @media (max-width:400px) {
+    @media (max-width:450px) {
+        .content-slider .btn-tags {
+            display: none;
+        }
         .search-container {
             display: none;
         }
-        .navbar{
+
+        .navbar {
             justify-content: space-around;
-            padding:0  20px;
+            padding: 0 20px;
         }
+
         .item-release,
+        .item-film,
         .item-recommend,
         .item-trending {
             flex-basis: 80%;
         }
+
         .release-content,
+        .film-content,
         .recommend-content,
         .trending-content {
             justify-content: center;
-    
+
         }
+
         .slider-control {
-            top: 11%;
+            top: 10%;
         }
+
         .watch-now,
         .watch-later {
             font-size: 10px;
@@ -1288,6 +1327,7 @@ html {
             width: 30px !important;
             height: 30px !important;
         }
+
         .nenmodal .ndmodal {
             position: absolute;
             margin-top: 90px;
@@ -1298,6 +1338,566 @@ html {
         iframe {
             width: 200px;
             height: 90px;
+        }
+    }
+
+}
+
+
+/* components */
+
+
+@media (min-width:1360px) and (max-width:1650px) {
+    .video-container {
+        top: 102px;
+    }
+
+}
+
+@media (max-width:1360px) {
+    .video-container {
+        top: 0;
+    }
+
+    .slider1 {
+        padding: 42px 80px 0 80px;
+    }
+
+    .movie-info {
+        margin-top: 20px;
+    }
+
+    .movie-description {
+        margin-bottom: 20px;
+        margin-top: 12px;
+    }
+
+    .content-movie {
+        margin-top: 40px;
+    }
+
+
+}
+
+@media (min-width:701px)and (max-width: 1700px) {
+    .movie-info {
+        overflow: hidden;
+    }
+
+    .movie-info .movie-img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .movie-content {
+        width: 100%;
+        height: auto;
+    }
+
+    .movie-heading {
+        margin-bottom: 24px;
+        font-size: 24px;
+
+    }
+
+    .add {
+        padding: 8px;
+        border-radius: 10px;
+
+    }
+
+    .add img {
+        width: 17px;
+        height: 17px;
+        margin-right: 10px;
+
+    }
+
+    .content-info .tag {
+        border-radius: 10px;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 10px;
+
+    }
+
+
+}
+
+@media (min-width: 850px) and (max-width: 1360px) {
+
+    @media (min-width: 850px) and (max-width: 1024px) {
+        .movie-content {
+            padding-left: 24px;
+        }
+
+        .content-info .icon-tag {
+            padding: 0 5px;
+        }
+
+        .content-info .tags-icon {
+            padding: 0;
+        }
+
+        .movie-description {
+            margin-bottom: 20px;
+            margin-top: 12px;
+            font-size: 14px;
+        }
+
+        .details {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+            width: 100%;
+
+        }
+
+        .label {
+            margin: 0;
+        }
+
+        .value {
+            margin: 0 0 0 5px;
+        }
+    }
+}
+
+@media (min-width: 700px) and (max-width:850px) {
+    #seekBar {
+        height: 7px;
+    }
+
+    #seekBar::-webkit-slider-thumb {
+        width: 24px;
+        height: 24px;
+        border: 4px solid #fff;
+
+    }
+
+    #seekBar::-moz-range-thumb {
+        width: 10px;
+        height: 10px;
+
+    }
+
+    .room-icon {
+        top: 40%;
+        left: 80%;
+    }
+
+    .add {
+        font-size: 10px;
+        height: 36px;
+    }
+
+    .movie-heading {
+        margin-bottom: 10px;
+    }
+
+    .movie-description {
+        font-size: 10px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .details {
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 14px;
+        width: 100%;
+    }
+
+    .label {
+        margin: 0;
+    }
+
+    .value {
+        margin: 0 0 0 5px;
+    }
+
+    .content-info .tag {
+        font-size: 10px;
+    }
+
+    .content-info .icon-tag {
+        font-size: 10px;
+        padding: 0 5px;
+        padding: 5px;
+    }
+
+    .content-info .tags-icon {
+        padding: 0;
+
+    }
+
+    #submit-comment {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+        margin-left: 20px;
+
+    }
+
+    .card-input p {
+        font-size: 12px;
+    }
+
+    .comment-card input {
+        height: 50px;
+        padding: 20px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+
+
+    }
+
+    .comment-content p {
+        font-family: Poppins;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+}
+
+/*Mobile*/
+
+@media (max-width:700px) {
+    .header-film {
+        margin-bottom: 20px;
+    }
+
+    .slider1 {
+        padding: 42px 40px 0 40px;
+    }
+
+    .controls {
+        bottom: 40px;
+        height: 30px;
+    }
+
+    #seekBar {
+        height: 7px;
+    }
+
+    #seekBar::-webkit-slider-thumb {
+        width: 24px;
+        height: 24px;
+        border: 4px solid #fff;
+    }
+
+    #seekBar::-moz-range-thumb {
+        width: 10px;
+        height: 10px;
+
+    }
+
+    .room-icon {
+        top: 40%;
+        left: 80%;
+    }
+
+    .contol-desc {
+        margin-top: 60px;
+        width: 70%;
+    }
+
+    .play {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .play p {
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+
+    }
+
+    .play img {
+        width: 24px;
+        height: 16px;
+    }
+
+    .mute {
+        margin-right: 40px;
+        display: flex;
+        margin-left: 40px;
+
+    }
+
+    .mute img {
+        width: 15px;
+        height: 15px;
+        margin: 0 4px;
+    }
+
+    .icon-plays {
+        width: 17px;
+        height: 17px;
+    }
+
+
+    .full-screen img {
+        width: 17px;
+        height: 15px;
+        margin: 0 6px;
+
+    }
+
+    .icon-setup {
+        width: 17px;
+        height: 17px;
+
+    }
+
+    .movie-info {
+        overflow: hidden;
+    }
+
+    .movie-info .movie-img {
+        width: 60%;
+        object-fit: cover;
+        height: auto;
+        /* overflow: hidden; */
+    }
+
+    .movie-content {
+        width: 100%;
+        height: auto;
+        margin-left: -120px;
+    }
+
+    .movie-heading {
+        /* display: block; */
+        margin-bottom: 0;
+        font-size: 24px;
+
+    }
+
+    .movie-description {
+        width: 100%;
+        margin-top: 8px;
+        margin-bottom: 10px;
+
+    }
+
+    .content-movie {
+        margin-top: 40px;
+    }
+
+    .add {
+        font-size: 10px;
+        height: 36px;
+        border-radius: 15px;
+
+    }
+
+    .add img {
+        width: 15px;
+        height: 15px;
+
+    }
+
+    .movie-description {
+        font-size: 10px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .details {
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 14px;
+        width: 100%;
+    }
+
+    .label {
+        margin: 0;
+    }
+
+    .value {
+        margin: 0 0 0 5px;
+    }
+
+    .accordion-item img {
+        width: 10px;
+        height: 10px;
+
+    }
+
+    .accordion-header {
+        padding: 6px;
+        font-size: 12px;
+        height: 40px;
+    }
+
+    .accordion-content p {
+        margin: 10px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+
+    }
+
+    @media (max-width:450px) {
+        .content-info {
+            display: none;
+        }
+
+        .movie-heading {
+            margin-bottom: 0;
+            font-size: 16px;
+
+        }
+
+        .add {
+            padding: 8px;
+            border-radius: 10px;
+
+        }
+
+        @media (max-width:400px) {
+            .movie-info .movie-img {
+                width: 50%;
+                object-fit: cover;
+                height: auto;
+            }
+
+            .movie-content {
+                width: 100%;
+                height: auto;
+                margin-left: -160px;
+            }
+
+            .add {
+                display: none;
+            }
+
+            .details {
+                font-size: 10px;
+                font-weight: 400;
+                line-height: 14px;
+                width: 100%;
+            }
+
+            .label {
+                margin: 0;
+            }
+
+            .value {
+                margin: 0 0 5px 5px;
+            }
+
+            .play p {
+                font-family: Poppins;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 16px;
+
+            }
+
+            .play img {
+                width: 17px;
+                height: 15px;
+            }
+
+            .mute {
+                margin-right: 0;
+                display: flex;
+                margin-left: 10px;
+
+            }
+
+            .slider1 {
+                padding: 24px 40px 0 40px;
+            }
+
+        }
+
+
+        .add img {
+            width: 15px;
+            height: 15px;
+            margin-right: 0;
+
+        }
+
+        .value {
+            margin: 0 0 0 5px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .contol-desc {
+            overflow: hidden;
+        }
+
+        .mute {
+            margin-right: 10px;
+            display: flex;
+            margin-left: 15px;
+
+        }
+
+        .comment-card .comment-img {
+            margin-right: 12px;
+            width: 70px;
+            height: 70px;
+        }
+
+        .comment-card {
+            width: 100%;
+            padding-right: 0;
+
+        }
+
+        #submit-comment {
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 16px;
+            margin-left: 20px;
+
+        }
+
+        .card-input p {
+            font-size: 12px;
+        }
+
+        .comment-card input {
+            height: 50px;
+            padding: 20px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 16px;
+
+
+        }
+
+
+        .card-input {
+            margin-bottom: 7px;
+            width: 80%;
+
+        }
+
+        .comment-content p {
+            font-size: 12px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
         }
     }
 
