@@ -739,8 +739,8 @@ body::-webkit-scrollbar {
 }
 
 #submit-comment {
-    width: 50px;
-    height: 40px;
+    width: 100px;
+    height: 50px;
     padding: 5px 10px;
     border-radius: 5px;
     background-color: red;
@@ -750,7 +750,7 @@ body::-webkit-scrollbar {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    margin-left: 20px;
+    margin-left: 10px;
     border: none;
 
 }
@@ -841,3 +841,50 @@ body::-webkit-scrollbar {
     cursor: pointer;
     transition: max-height 0.3s ease;
 }
+
+.drawer {
+    width: 200px;
+    height: 100%;
+    background-color: #1b0338;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    transition: left 0.3s;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .drawer-text{
+    top: 60px;
+    position: absolute;
+    padding: 0 20px;
+  }
+  .drawer a{
+    text-decoration: none;
+    width: 100%;
+    display: inline-block;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  .drawer a:hover{
+    background-color: #848181;
+    border-radius: 5px;
+  }
+  
+  .drawer.open {
+    left: 0;
+  }
+  #closeButton {
+    font-size: 36px;
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
