@@ -50,7 +50,7 @@ document.getElementById('submit-comment').addEventListener('click', function () 
         const newComment = document.createElement('div');
         newComment.classList.add('movie-card');
         newComment.innerHTML = `
-         <div class=" movie-card ">
+            <div class=" movie-card ">
                         <a class="img-container">
                             <img src="./assets/images/Comment1.png" alt="James">
                             <div class="img-overlay"></div>
@@ -78,3 +78,21 @@ document.getElementById('submit-comment').addEventListener('click', function () 
         alert('Please enter a comment.');
     }
 });
+
+
+  
+  //menu
+  function toggleDrawer() {
+    var drawer = document.getElementById('drawer');
+    if (drawer.style.left === '0px') {
+        drawer.style.left = '-200px'; 
+    } else {
+        drawer.style.left = '0px'; 
+    }
+  }
+  
+  function closeDrawer() {
+    var drawer = document.getElementById('drawer');
+    drawer.style.left = '-200px'; 
+  }
+  
