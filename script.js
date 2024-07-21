@@ -14,7 +14,6 @@ function enableScroll() {
   body.classList.remove("scroll-disabled");
   documentElement.scrollTop = scrollTop;
   body.style.removeProperty("top");
- 
 }
 function momodal(event) {
   if (event) event.preventDefault();
@@ -58,13 +57,11 @@ function showSlides() {
     slideIndex = 0;
   }
 }
- interval = setInterval(showSlides, 5000);
+interval = setInterval(showSlides, 5000);
 showSlides((slideIndex = 0));
 function currentSlide(n) {
   showSlides((slideIndex = n));
 }
-
-
 
 
 
@@ -79,22 +76,41 @@ document.addEventListener("DOMContentLoaded", function () {
       currentSlide >= slideArray.length - 4;
     document.querySelector(".left-btn").disabled = currentSlide <= 0;
   }
+function getSlideMovePercentage() {
+  let cardWidth = document.querySelector('.movie-card').offsetWidth;
+  let containerWidth = document.querySelector('.scroll-container').offsetWidth;
+  return (cardWidth / containerWidth) * 100;
+}
 
-  document.querySelector(".left-btn").addEventListener("click", function () {
-    if (currentSlide > 0) {
-      currentSlide--;
-      slides.style.transform = `translateX(-${currentSlide * 22}%)`;
-      updateButtonStatus();
-    }
-  });
-
-  document.querySelector(".right-btn").addEventListener("click", function () {
-    if (currentSlide < slideArray.length - 1) {
+document.querySelector(".right-btn").addEventListener("click", function () {
+  if (currentSlide < slideArray.length - 1) {
       currentSlide++;
-      slides.style.transform = `translateX(-${currentSlide * 22}%)`;
+      let movePercentage = getSlideMovePercentage();
+      slides.style.transform = `translateX(-${currentSlide * movePercentage}%)`;
       updateButtonStatus();
-    }
-  });
-
-  updateButtonStatus();
+  }
 });
+
+document.querySelector(".left-btn").addEventListener("click", function () {
+  if (currentSlide > 0) {
+      currentSlide--;
+      let movePercentage = getSlideMovePercentage();
+      slides.style.transform = `translateX(-${currentSlide * movePercentage}%)`;
+      updateButtonStatus();
+  }
+});
+});
+//navbar
+function toggleDrawer() {
+  var drawer = document.getElementById('drawer');
+  if (drawer.style.left === '0px') {
+      drawer.style.left = '-200px'; 
+  } else {
+      drawer.style.left = '0px'; 
+  }
+}
+
+function closeDrawer() {
+  var drawer = document.getElementById('drawer');
+  drawer.style.left = '-200px'; 
+}
