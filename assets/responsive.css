@@ -192,15 +192,6 @@ html {
         padding: 40px 80px;
     }
 
-    .navbar>ul {
-        position: absolute;
-        left: 14%;
-        top: 60px;
-        flex-wrap: wrap;
-
-        position: fixed;
-        width: 10%;
-    }
 
     .nav-menu {
         display: none;
@@ -214,21 +205,6 @@ html {
     .smail {
         display: block;
     }
-
-    .nav-menu>li {
-        background-color: #000;
-        flex-wrap: wrap;
-        display: block;
-        flex-direction: column;
-        padding: 5px;
-        border-bottom: 1px solid #262121;
-    }
-
-    .nav-menu>li a {
-        width: 100%;
-        font-size: 12px;
-    }
-
     .register a,
     #search-input {
         font-size: 14px;
@@ -1190,6 +1166,24 @@ html {
 
     .header-trending img,
     .header-release img,
+    
+.drawer {
+    width: 150px;
+    left: -150px;
+  }
+  .drawer-text{
+    top: 60px;
+    position: absolute;
+    padding: 0 10px;
+  }
+  .drawer a{
+
+    padding: 10px 5px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+  
     .header-recommend img {
         width: 12px;
         height: 12px;
@@ -1236,7 +1230,7 @@ html {
 
         }
 
-        .tags-icon {
+        .content-slider .tags-icon {
             display: none;
         }
 
@@ -1604,14 +1598,10 @@ html {
     .contol-desc {
         margin-top: 60px;
         width: 70%;
+
     }
 
-    .play {
 
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
 
     .play p {
         font-family: Poppins;
@@ -1620,59 +1610,40 @@ html {
         line-height: 16px;
 
     }
-
+    .mute .fast{
+        right: 20px;
+    }
     .play img {
-        width: 24px;
-        height: 16px;
+       display: none;
+    }
+    .no-active {
+        display: none;
     }
 
-    .mute {
-        margin-right: 40px;
-        display: flex;
-        margin-left: 40px;
-
-    }
-
-    .mute img {
-        width: 15px;
-        height: 15px;
-        margin: 0 4px;
-    }
-
-    .icon-plays {
-        width: 17px;
-        height: 17px;
-    }
-
-
-    .full-screen img {
-        width: 17px;
-        height: 15px;
-        margin: 0 6px;
-
-    }
-
-    .icon-setup {
-        width: 17px;
-        height: 17px;
-
-    }
 
     .movie-info {
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-
+    .movie-image{
+        display: flex;
+        justify-content: center;
+    }
     .movie-info .movie-img {
-        width: 60%;
+        width: 80%;
         object-fit: cover;
         height: auto;
-        /* overflow: hidden; */
+        justify-content: center;
     }
 
     .movie-content {
+        margin-top: 20px;
         width: 100%;
         height: auto;
-        margin-left: -120px;
+        padding:0;
     }
 
     .movie-heading {
@@ -1718,7 +1689,7 @@ html {
         font-size: 10px;
         font-weight: 400;
         line-height: 14px;
-        width: 100%;
+        width: 70%;
     }
 
     .label {
@@ -1749,10 +1720,33 @@ html {
 
     }
 
+    .accordion {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0;
+    }
+    .comment-card{
+        padding-right: 0;
+    }
+
     @media (max-width:450px) {
-        .content-info {
-            display: none;
-        }
+        .drawer {
+            width: 100px;
+            left: -100px;
+          }
+          .drawer-text{
+            top: 60px;
+            position: absolute;
+            padding: 0 10px;
+          }
+          .drawer a{
+        
+            padding: 10px 5px;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 12px;
+          }
+          
 
         .movie-heading {
             margin-bottom: 0;
@@ -1767,8 +1761,9 @@ html {
         }
 
         @media (max-width:400px) {
+            
             .movie-info .movie-img {
-                width: 50%;
+                width: 80%;
                 object-fit: cover;
                 height: auto;
             }
@@ -1776,12 +1771,9 @@ html {
             .movie-content {
                 width: 100%;
                 height: auto;
-                margin-left: -160px;
+                padding: 0;
             }
 
-            .add {
-                display: none;
-            }
 
             .details {
                 font-size: 10px;
