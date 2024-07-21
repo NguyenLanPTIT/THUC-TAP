@@ -347,8 +347,9 @@ html {
     }
 
     .nenmodal .nenmodal2 {
+        top: 60px;
         position: fixed;
-        margin-top: -102px;
+        margin-top: -180px;
         /* display: none; */
     }
 
@@ -525,8 +526,9 @@ html {
     }
 
     .nenmodal .nenmodal2 {
+        top: 60px;
         position: fixed;
-        margin-top: -160px;
+        margin-top: -220px;
     }
 
     @media (min-width: 1045px) and (max-width: 1360px) {
@@ -991,8 +993,9 @@ html {
     }
 
     .nenmodal .nenmodal2 {
+        top: 60px;
         position: fixed;
-        margin-top: -70px;
+        margin-top: -90px;
     }
 
     iframe {
