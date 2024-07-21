@@ -17,7 +17,19 @@
 <body>
     <div class="Web">
         <div id="navbar" class="navbar">
-            <button class="hamburger" id="hamburger-icon">&#9776;</button>
+            <div onclick="toggleDrawer()" class="hamburger" id="hamburger-icon">&#9776;</div>
+            <div id="drawer" class="drawer">
+                <div id="closeButton" onclick="closeDrawer()">&times;</div>
+                <div class="drawer-text">
+                    <a href="#home">Home</a>
+                    <a href="#">Genre</a>
+                    <a href="#">Country</a>
+                    <a href="#Movies">Movies</a>
+                    <a href="#Series">Series</a>
+                    <a href="#Animation">Animation</a>
+                </div>
+
+            </div>
             <ul class="nav-menu ">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#">Genre</a></li>
@@ -54,14 +66,15 @@
                         <img src="./assets/images/radio.svg" alt="">
                     </div>
                     <div class="mute">
-                        <img src="./assets/images/reset.svg" alt="">
-                        <img class="icon-plays" id="icon-plays" src="./assets/images/play.svg" alt="">
-                        <img src="./assets/images/fast.svg" alt="">
+                        <img class="no-active" src="./assets/images/reset.svg" alt="">
+                        <img class="icon-plays no-active"  id="icon-plays" src="./assets/images/play.svg" alt="">
+                        <img class="no-active"src="./assets/images/fast.svg" alt="">
                     </div>
                     <div class="full-screen">
-                        <img src="./assets/images/cc.svg" alt="">
-                        <img class="icon-setup" src="./assets/images/setup.svg" alt="">
+                        <img class="no-active"  src="./assets/images/cc.svg" alt="">
+                        <img class="no-active"  class="icon-setup" src="./assets/images/setup.svg" alt="">
                         <img src="./assets/images/room.svg" alt="">
+                        <img class="fast" src="./assets/images/fast.svg" alt="">
                     </div>
                 </div>
 
