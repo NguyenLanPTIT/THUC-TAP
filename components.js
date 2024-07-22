@@ -48,12 +48,11 @@ document.getElementById('submit-comment').addEventListener('click', function () 
     if (comment) {
         const commentsContainer = document.querySelector('.scroll-container');
         const newComment = document.createElement('div');
-        newComment.classList.add('movie-card');
+        newComment.classList.add('comment-card');
         newComment.innerHTML = `
-            <div class=" movie-card ">
-                        <a class="img-container">
-                            <img src="./assets/images/Comment1.png" alt="James">
-                            <div class="img-overlay"></div>
+           <div class=" comment-card ">
+                <img class="comment-img" src="./assets/images/Comment1.png" alt="James">
+
                         </a>
                         <div class="comment-content">
                             <p>Arlene<br>08/07/2024<br>${comment}</p>
@@ -80,19 +79,18 @@ document.getElementById('submit-comment').addEventListener('click', function () 
 });
 
 
-  
-  //menu
-  function toggleDrawer() {
+
+//menu
+function toggleDrawer() {
     var drawer = document.getElementById('drawer');
     if (drawer.style.left === '0px') {
-        drawer.style.left = '-200px'; 
+        drawer.style.left = '-200px';
     } else {
-        drawer.style.left = '0px'; 
+        drawer.style.left = '0px';
     }
-  }
-  
-  function closeDrawer() {
+}
+
+function closeDrawer() {
     var drawer = document.getElementById('drawer');
-    drawer.style.left = '-200px'; 
-  }
-  
+    drawer.style.left = '-200px';
+}
