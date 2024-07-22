@@ -205,6 +205,7 @@ html {
     .smail {
         display: block;
     }
+
     .register a,
     #search-input {
         font-size: 14px;
@@ -532,6 +533,36 @@ html {
     }
 
     @media (min-width: 1045px) and (max-width: 1360px) {
+        @media (min-width: 1045px) and (max-width: 1100px) {
+            .movie-card {
+            min-width: 29%;
+            padding-right: 20px;
+        }
+
+
+        }
+        @media (min-width: 1100px) and (max-width: 1200px) {
+            .movie-card {
+            min-width: 28.5%;
+            padding-right: 40px;
+        }
+
+
+        }
+        @media (min-width: 1200px) and (max-width: 1320px) {
+            .movie-card {
+            min-width: 22%;
+            padding-right: 45px;
+        }
+
+
+        }
+
+        .movie-card img {
+            width: 50px;
+            height: 78px;
+        }
+
 
         .item-release,
         .item-film,
@@ -619,6 +650,7 @@ html {
     }
 
     @media (min-width: 850px) and (max-width:950px) {
+
         .navbar>ul {
             left: 12%;
             width: 12%;
@@ -674,6 +706,13 @@ html {
             margin: 0;
 
         }
+
+        .movie-card {
+            min-width: 40%;
+            padding-right: 20px;
+        }
+
+
     }
 
 }
@@ -1173,25 +1212,27 @@ html {
         width: 12px;
         height: 12px;
     }
-    
-.drawer {
-    width: 150px;
-    left: -150px;
-  }
-  .drawer-text{
-    top: 60px;
-    position: absolute;
-    padding: 0 10px;
-  }
-  .drawer a{
 
-    padding: 10px 5px;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px;
-  }
-  
-   
+    .drawer {
+        width: 150px;
+        left: -150px;
+    }
+
+    .drawer-text {
+        top: 60px;
+        position: absolute;
+        padding: 0 10px;
+    }
+
+    .drawer a {
+
+        padding: 10px 5px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16px;
+    }
+
+
 
     @media (max-width:540px) {
         .register a {
@@ -1259,6 +1300,7 @@ html {
         .content-slider .btn-tags {
             display: none;
         }
+
         .search-container {
             display: none;
         }
@@ -1614,12 +1656,15 @@ html {
         line-height: 16px;
 
     }
-    .fast{
+
+    .fast {
         display: block;
     }
+
     .play img {
-       display: none;
+        display: none;
     }
+
     .no-active {
         display: none;
     }
@@ -1632,10 +1677,12 @@ html {
         justify-content: center;
         align-items: center;
     }
-    .movie-image{
+
+    .movie-image {
         display: flex;
         justify-content: center;
     }
+
     .movie-info .movie-img {
         width: 80%;
         object-fit: cover;
@@ -1647,7 +1694,7 @@ html {
         margin-top: 20px;
         width: 100%;
         height: auto;
-        padding:0;
+        padding: 0;
     }
 
     .movie-heading {
@@ -1729,7 +1776,8 @@ html {
         grid-template-columns: repeat(1, 1fr);
         gap: 0;
     }
-    .comment-card{
+
+    .comment-card {
         padding-right: 0;
     }
 
@@ -1737,20 +1785,22 @@ html {
         .drawer {
             width: 100px;
             left: -100px;
-          }
-          .drawer-text{
+        }
+
+        .drawer-text {
             top: 60px;
             position: absolute;
             padding: 0 10px;
-          }
-          .drawer a{
-        
+        }
+
+        .drawer a {
+
             padding: 10px 5px;
             font-size: 12px;
             font-weight: 500;
             line-height: 12px;
-          }
-          
+        }
+
 
         .movie-heading {
             margin-bottom: 0;
@@ -1765,7 +1815,7 @@ html {
         }
 
         @media (max-width:400px) {
-            
+
             .movie-info .movie-img {
                 width: 80%;
                 object-fit: cover;
