@@ -887,4 +887,6 @@ body::-webkit-scrollbar {
     right: 10px;
     cursor: pointer;
   }
-  
+  .fast {
+    display: none;
+  }
