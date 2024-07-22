@@ -1613,8 +1613,8 @@ html {
         line-height: 16px;
 
     }
-    .mute .fast{
-        right: 20px;
+    .fast{
+        display: block;
     }
     .play img {
        display: none;
