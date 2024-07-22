@@ -1225,7 +1225,7 @@ html {
     }
 
     .drawer a {
-
+        font-size: 10px;
         padding: 10px 5px;
         font-size: 14px;
         font-weight: 500;
@@ -1783,8 +1783,8 @@ html {
 
     @media (max-width:450px) {
         .drawer {
-            width: 100px;
-            left: -100px;
+            width: 110px;
+            left: -110px;
         }
 
         .drawer-text {
@@ -1795,7 +1795,7 @@ html {
 
         .drawer a {
 
-            padding: 10px 5px;
+            padding: 10px 0;
             font-size: 12px;
             font-weight: 500;
             line-height: 12px;
