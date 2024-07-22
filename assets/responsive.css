@@ -1169,6 +1169,10 @@ html {
 
     .header-trending img,
     .header-release img,
+    .header-recommend img {
+        width: 12px;
+        height: 12px;
+    }
     
 .drawer {
     width: 150px;
@@ -1187,10 +1191,7 @@ html {
     line-height: 16px;
   }
   
-    .header-recommend img {
-        width: 12px;
-        height: 12px;
-    }
+   
 
     @media (max-width:540px) {
         .register a {
